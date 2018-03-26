@@ -15,7 +15,7 @@
            }); 
         ?>
         <h2>Information detail admin</h2>
-        <form action="" method="POST">
+        <form action="controllers/AdminController.php" method="POST">
             <table border="1">
                 <tr>
                     <th>Admin Id</th>

@@ -22,7 +22,7 @@ class AdminController {
         
     function __contruct() {
         // Connect Database
-        $dbConnect = new MySQLConnection($serverName, $userName, $password, $dbName);
+        $dbConnect = new MySQLConnection('localhost:3306', 'root', 123456, 'ecomnerce');
         if ($dbConnect->getError() != NULL) {
             $dbConnect->close();
             die("Error: " . $dbConnect->getError());
