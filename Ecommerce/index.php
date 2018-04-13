@@ -1,21 +1,19 @@
 <!DOCTYPE html>
+
+<?php
+    include 'controllers/AdminController.php';
+
+?>
+
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Webpage Ecommerce</title>
     </head>
     <body>
-        <?php
-        // put your code here
-           spl_autoload_register( function( $class_name ) {
-		$file_name = './controllers/'.$class_name . '.php';
-		if( file_exists( $file_name ) ) {
-			require $file_name;
-		}
-           }); 
-        ?>
+
         <h2>Information detail admin</h2>
-        <form action="controllers/AdminController.php" method="POST">
+        <form action="" method="POST">
             <table border="1">
                 <tr>
                     <th>Admin Id</th>
@@ -24,20 +22,18 @@
                     <th>Name</th>
                 </tr>
                 <?php
-                    $admins = new AdminController();
-                    $adminList = array();
-                    $adminList = $admins->getAdminList();
-                    if (count($adminList) > 0) {
-                        // output data of each row
-                        while($row = $adminList->fetch_assoc()) { 
-                            printf("<tr>"
-                                    . "<td>".$row["admin_id"]."</td>"
-                                    . "<td>".$row["user_name"]."</td>"
-                                    . "<td>".$row["password"]."</td>"
-                                    . "<td>".$row["name"] . "</td>"
-                                . "</tr>");
-                        }
-                    }
+                $admins = new AdminController();
+//                    
+                $adminList = $admins->getAdminList();
+                $length = count($adminList);
+                for ($i = 0; $i < $length; $i++) {
+                    printf("<tr>"
+                            . "<td>" . $adminList[$i]->getAdminId() . "</td>"
+                            . "<td>" . $adminList[$i]->getUserName() . "</td>"
+                            . "<td>" . $adminList[$i]->getPassword() . "</td>"
+                            . "<td>" . $adminList[$i]->getName() . "</td>"
+                            . "</tr>");
+                }
                 ?>
 
                 <tr>
@@ -55,9 +51,9 @@
                     </td>
                 </tr>
             </table>
-        
+
             <input type="submit" name="submit" value="Add Admin"/>
         </form>
-        
+
     </body>
 </html>

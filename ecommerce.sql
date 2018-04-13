@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 23, 2018 at 02:16 PM
+-- Generation Time: Apr 13, 2018 at 07:01 AM
 -- Server version: 5.7.21-log
 -- PHP Version: 7.2.2
 
@@ -34,6 +34,15 @@ CREATE TABLE `admin` (
   `password` varchar(100) NOT NULL,
   `name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`admin_id`, `user_name`, `password`, `name`) VALUES
+(1, '1TuanSS', '1234', 'Tuan'),
+(2, 'Themsad', '565', 'Minh'),
+(3, 'Useer', '55329', 'Temp');
 
 -- --------------------------------------------------------
 
@@ -165,7 +174,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `ordertable`

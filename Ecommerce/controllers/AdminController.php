@@ -1,13 +1,7 @@
 <?php
-
-// Auto include class if need
-spl_autoload_register(function( $class_name ) {
-    $file_name = '../' . 'models/dboperation' . $class_name . '.php';
-    if (file_exists($file_name)) {
-        require $file_name;
-    }
-});
-
+include 'models/dboperation/AdminMySQLOperation.php';
+include 'models/dboperation/MySQLConnection.php';
+include 'models/Admin.php';
 class AdminController {
     private $adminList;
     
@@ -20,14 +14,16 @@ class AdminController {
     }
 
         
-    function __contruct() {
+    function __construct() {
         // Connect Database
-        $dbConnect = new MySQLConnection('localhost:3306', 'root', 123456, 'ecomnerce');
+        $dbConnect = new MySQLConnection('localhost:3306', 'root', 123456, 'ecommerce');
         if ($dbConnect->getError() != NULL) {
             $dbConnect->close();
             die("Error: " . $dbConnect->getError());
         } else {
-            $admin = new AdminMySQLOperation($dbConnect);
+            if($dbConnect->getConn() == null)    echo 'null';
+            $admin = new AdminMySQLOperation();
+            $admin->setConn($dbConnect);
             $this->adminList = $admin->getAdmins();
             if (isset($_POST["submit"])) {
                 
@@ -46,8 +42,6 @@ class AdminController {
             $dbConnect->close();
         }
     }
-    
-
 }
 
 ?>

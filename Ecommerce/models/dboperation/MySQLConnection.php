@@ -1,8 +1,4 @@
 <?php
-    define($serverName,"localhost:3306");
-    define($userName,'root');
-    define($password,123456);
-    define($dbName,"ecommerce");
     
 class MySQLConnection {
         
@@ -16,8 +12,11 @@ class MySQLConnection {
         if ($this->conn->connect_error) {
             $this->error = mysqli_connect_error();
         }
+        
     }
     
+
+
     public function getConn() {
         return $this->conn;
     }
