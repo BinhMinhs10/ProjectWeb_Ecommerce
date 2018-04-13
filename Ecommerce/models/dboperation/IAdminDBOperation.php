@@ -1,10 +1,10 @@
 <?php
 
-interface AdminDBOperation {
+interface IAdminDBOperation {
 
     function getAdmin($adminId);
 
-    function updateAdmin($userName, $pass, $name);
+    function updateAdmin($adminId,$userName, $pass, $name);
 
     function deleteAdmin($adminId);
 

@@ -1,7 +1,7 @@
 <?php
 include 'IAdminDBOperation.php';
 
-class AdminMySQLOperation implements AdminDBOperation {
+class AdminMySQLOperation implements IAdminDBOperation {
 
     private $conn;
 
@@ -37,8 +37,8 @@ class AdminMySQLOperation implements AdminDBOperation {
         }
     }
 
-    public function updateAdmin($userName, $pass, $name) {
-        $sql = "UPDATE admin SET password='$pass', name='$name' where user_name='$userName'";
+    public function updateAdmin($adminId,$userName, $pass, $name) {
+        $sql = "UPDATE admin SET user_name='$userName', password='$pass', name='$name' where admin_id='$adminId'";
 
         $result = $this->conn->query(htmlspecialchars($sql));
         if ($result == TRUE) {
@@ -50,12 +50,12 @@ class AdminMySQLOperation implements AdminDBOperation {
         }
     }
 
-    public function deleteAdmin($userName) {
-        $sql = "DELETE FROM admin WHERE user_name='$userName'";
+    public function deleteAdmin($adminid) {
+        $sql = "DELETE FROM admin WHERE admin_id='$adminid'";
+        $admin = $this->getAdmin($adminid);
         $result = $this->conn->query(htmlspecialchars($sql));
         if ($result == TRUE) {
-            $row = $result->fetch_assoc();
-            return new Admin($row["admin_id"], $row['user_name'], $row['password'], $row['name']);
+            return $admin;
         } else {
             $this->error = $this->conn->error;
             return false;

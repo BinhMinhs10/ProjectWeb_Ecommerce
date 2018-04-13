@@ -3,7 +3,7 @@ include 'models/dboperation/AdminMySQLOperation.php';
 include 'models/dboperation/MySQLConnection.php';
 include 'models/Admin.php';
 class AdminController {
-    private $adminList;
+    private $adminList = array();
     
     function getAdminList() {
         return $this->adminList;
@@ -25,23 +25,43 @@ class AdminController {
             $admin = new AdminMySQLOperation();
             $admin->setConn($dbConnect);
             $this->adminList = $admin->getAdmins();
-            if (isset($_POST["submit"])) {
+            if (isset($_POST["addAdmin"])) {
                 
-                $userName = $_POST["user_name"];
-                $password = $_POST["password"];
-                $name = $_POST["name"];
+                $this->cAddAdmin($admin);
+            }else if (isset($_POST["remove"])) {
 
-                $result = $admin->addAdmin($userName, $password, $name);
-                if (!$result) {
-                    die("Error: " . $dbConnect->getError());
-                } else {
-                    array_push($this->adminList, $admin->getAdmin($result->getAdminId()));
+                if(isset($_POST['select'])){
+                    foreach ($_POST['select'] as $row) {
+                        $result = $admin->deleteAdmin($row);
+                        if (!$result) {
+                            die("Error: " . $dbConnect->getError());
+                        }else{
+                            unset($this->adminList[$admin->getAdmin($row)]);
+                        }    
+                    }
                 }
+            }else if (isset($_POST["edit"])) {
+                
             }
 
             $dbConnect->close();
         }
     }
+
+    function cAddAdmin($admin){
+        $userName = $_POST["user_name"];
+        $password = $_POST["password"];
+        $name = $_POST["name"];
+
+        $result = $admin->addAdmin($userName, $password, $name);
+        if (!$result) {
+            die("Error: " . $dbConnect->getError());
+        } else {
+            array_push($this->adminList, $admin->getAdmin($result->getAdminId()));
+        }
+    }
+
+
 }
 
 ?>
