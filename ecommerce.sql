@@ -2,10 +2,10 @@
 -- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Apr 13, 2018 at 07:01 AM
--- Server version: 5.7.21-log
--- PHP Version: 7.2.2
+-- Máy chủ: localhost
+-- Thời gian đã tạo: Th4 24, 2018 lúc 12:10 PM
+-- Phiên bản máy phục vụ: 5.7.21-log
+-- Phiên bản PHP: 7.2.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ecommerce`
+-- Cơ sở dữ liệu: `ecommerce`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Cấu trúc bảng cho bảng `admin`
 --
 
 CREATE TABLE `admin` (
@@ -36,18 +36,16 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16;
 
 --
--- Dumping data for table `admin`
+-- Đang đổ dữ liệu cho bảng `admin`
 --
 
 INSERT INTO `admin` (`admin_id`, `user_name`, `password`, `name`) VALUES
-(1, '1TuanSS', '1234', 'Tuan'),
-(2, 'Themsad', '565', 'Minh'),
-(3, 'Useer', '55329', 'Temp');
+(6, 'admin', '123456', 'Nguyễn Bình Minh');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ordertable`
+-- Cấu trúc bảng cho bảng `ordertable`
 --
 
 CREATE TABLE `ordertable` (
@@ -61,7 +59,7 @@ CREATE TABLE `ordertable` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product`
+-- Cấu trúc bảng cho bảng `product`
 --
 
 CREATE TABLE `product` (
@@ -80,20 +78,33 @@ CREATE TABLE `product` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `productcategory`
+-- Cấu trúc bảng cho bảng `productcategory`
 --
 
 CREATE TABLE `productcategory` (
   `category_id` int(11) NOT NULL,
   `category_name` varchar(100) NOT NULL,
-  `parent_id` int(11) NOT NULL,
-  `category_order` int(11) NOT NULL DEFAULT '0'
+  `parent_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+
+--
+-- Đang đổ dữ liệu cho bảng `productcategory`
+--
+
+INSERT INTO `productcategory` (`category_id`, `category_name`, `parent_id`) VALUES
+(1, 'Điện gia dụng nhà bếp', 0),
+(2, 'Nồi cơm điện', 1),
+(3, 'Bếp', 1),
+(4, 'Chảo', 1),
+(5, 'Đồ dùng nhà bếp', 1),
+(6, 'Đồ nướng', 1),
+(7, 'Máy say, trộn, nghiền', 1),
+(8, 'Bát, đĩa', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `transaction`
+-- Cấu trúc bảng cho bảng `transaction`
 --
 
 CREATE TABLE `transaction` (
@@ -108,7 +119,7 @@ CREATE TABLE `transaction` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Cấu trúc bảng cho bảng `user`
 --
 
 CREATE TABLE `user` (
@@ -121,18 +132,18 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16;
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `admin`
+-- Chỉ mục cho bảng `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`admin_id`),
   ADD UNIQUE KEY `user_name` (`user_name`);
 
 --
--- Indexes for table `ordertable`
+-- Chỉ mục cho bảng `ordertable`
 --
 ALTER TABLE `ordertable`
   ADD PRIMARY KEY (`order_id`),
@@ -140,97 +151,90 @@ ALTER TABLE `ordertable`
   ADD KEY `transaction_id` (`transaction_id`);
 
 --
--- Indexes for table `product`
+-- Chỉ mục cho bảng `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`product_id`),
   ADD KEY `category_id` (`category_id`);
 
 --
--- Indexes for table `productcategory`
+-- Chỉ mục cho bảng `productcategory`
 --
 ALTER TABLE `productcategory`
-  ADD PRIMARY KEY (`category_id`),
-  ADD KEY `parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`category_id`);
 
 --
--- Indexes for table `transaction`
+-- Chỉ mục cho bảng `transaction`
 --
 ALTER TABLE `transaction`
   ADD PRIMARY KEY (`transaction_id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `user`
+-- Chỉ mục cho bảng `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `admin`
+-- AUTO_INCREMENT cho bảng `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `ordertable`
+-- AUTO_INCREMENT cho bảng `ordertable`
 --
 ALTER TABLE `ordertable`
   MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `product`
+-- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
   MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `productcategory`
+-- AUTO_INCREMENT cho bảng `productcategory`
 --
 ALTER TABLE `productcategory`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `transaction`
+-- AUTO_INCREMENT cho bảng `transaction`
 --
 ALTER TABLE `transaction`
   MODIFY `transaction_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- Constraints for dumped tables
+-- Các ràng buộc cho các bảng đã đổ
 --
 
 --
--- Constraints for table `ordertable`
+-- Các ràng buộc cho bảng `ordertable`
 --
 ALTER TABLE `ordertable`
   ADD CONSTRAINT `ordertable_ibfk_1` FOREIGN KEY (`transaction_id`) REFERENCES `transaction` (`transaction_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `ordertable_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `product`
+-- Các ràng buộc cho bảng `product`
 --
 ALTER TABLE `product`
   ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `productcategory` (`category_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `productcategory`
---
-ALTER TABLE `productcategory`
-  ADD CONSTRAINT `productcategory_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `productcategory` (`category_id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `transaction`
+-- Các ràng buộc cho bảng `transaction`
 --
 ALTER TABLE `transaction`
   ADD CONSTRAINT `transaction_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
