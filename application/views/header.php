@@ -1,36 +1,42 @@
 <head>
-	<script type="text/javascript" src="<?php echo base_url() ?>bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="<?php echo base_url() ?>bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
-<nav class="navbar navbar-inverse navbar-fixed-top">
 
-  	<div class="container-fluid">
-    	<div class="navbar-header">
-    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>                        
-		    </button>
-	      	<a class="navbar-brand" href="#">Nhóm 12</a>
-	    </div>
-	    <div class="collapse navbar-collapse" id="navbar">
-	    	<ul class="nav navbar-nav">
-		    	<li class="active"><a href="<?php echo base_url(); ?>index.php">Trang chủ</a></li>
-		    	<li><a href="#">Chăm sóc khách hàng</a></li>
-		    	<li><a href="#">Tin tức</a></li>
-		    </ul>
-		    <form action="" class="navbar-form navbar-left">
-		    	<div class="form-group">
-		    		<input type="text" class="form-control" placeholder="Search">
-		    	</div>
-		    	<button type="submit" class="btn btn-primary">Tìm kiếm</button>
-		    </form>
-		    <ul class="nav navbar-nav navbar-right">
-		    	<li><a href="#"><span class="glyphicon glyphicon-user"></span>  Đăng ký</a></li>
-		    	<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>  Đăng nhập</a></li>
-		    </ul>
-	    </div>
-	    
-  	</div>
-</nav>
-<br/><br/>
+<div class="container-fluid">
+	<div class="fixed-top">
+		<div class='alert-primary' style="text-align: right; font-size: 30px">BIG WEB SALE HOUSEWARE - GROUP 12</div>
+		<nav class="navbar navbar-expand-md bg-info navbar-dark">
+			<a href="#" class="navbar-brand">
+				<img src="<?php echo base_url(); ?>images/please.jpg" alt="Logo" style="width: 40px">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapse">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="<?php echo base_url() ?>index.php/home" class="nav-link text-white" >Trang chủ</a></li>
+					<li class="nav-item"><a href="#menu-toggle" class="nav-link text-white" id="menu-toggle">Menu</a></li>
+					<li class="nav-item"><a href="#" class="nav-link text-white" >Chăm sóc khách hàng</a></li>
+					<li class="nav-item"><a href="#" class="nav-link text-white" >Tin tức</a></li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle text-white" data-toggle="dropdown">Dropdown link</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">Link 1</a>
+							<a href="#" class="dropdown-item">Link 2</a>
+							<a href="#" class="dropdown-item">Link 3</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<form class="form-inline" action="#">
+				<input type="text" class="form-control" placeholder="Search...">
+				<a href="#" class="btn btn-light text-lg-center text-primary border-dark" > Tìm kiếm</a>
+			</form>
+		</nav>
+	</div>
+	
+	<br/><br/><br/><br/><br/>
+</div>

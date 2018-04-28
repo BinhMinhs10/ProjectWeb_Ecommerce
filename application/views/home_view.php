@@ -3,26 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Web bán đồ gia dụng</title>
-	<script type="text/javascript" src="<?php echo base_url() ?>vendor/js/bootstrap.js"></script>
- 	<script type="text/javascript" src="<?php echo base_url() ?>vendor/1.js"></script>
-	<link rel="stylesheet" href="<?php echo base_url() ?>vendor/css/bootstrap.css">
-	<link rel="stylesheet" href="<?php echo base_url() ?>vendor/css/font-awesome.css">
- 	<link rel="stylesheet" href="<?php echo base_url() ?>vendor/1.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 	
 	<?php require_once('header.php') ?>
-	<main class="cd-main-content">
-		<?php require_once('sidebar_admin.php') ?>
-		<div class="content-wrapper">
-			<div class="container-fluid">
-			
-				<h2>Website ecommerce </h2>
-			
-			</div>
-		</div> <!-- .content-wrapper -->
-	</main>
+	
+	<div id="wrapper">
+
+        <?php require_once('sidebar.php') ?>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <h1>Simple Sidebar</h1>
+                <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                <kbd>Click menu to open side bar</kbd>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+	
 	
 </body>
 </html>
