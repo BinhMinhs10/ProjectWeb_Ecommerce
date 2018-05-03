@@ -13,7 +13,7 @@ class productcategory extends CI_Controller {
 		$ketqua = $this->productcategory_model->getAllData();
 		$ketqua = array('mangketqua' => $ketqua);
 
-		$this->load->view('productcategory_view', $ketqua);
+		$this->load->view('manager/productcategory_view', $ketqua);
 	}
 	public function category_add()
 	{
@@ -24,7 +24,7 @@ class productcategory extends CI_Controller {
 		$this->load->model('productcategory_model');
 		$trangthai = $this->productcategory_model->insertDataToMysql($ten,$parent_id);
 		if ($trangthai) {
-			$this->load->view('success_view');
+			$this->load->view('manager/success_view');
 		}else{
 			echo '<h2>That bai xem lai code</h2>';
 		}
@@ -33,7 +33,7 @@ class productcategory extends CI_Controller {
 	{
 		$this->load->model('productcategory_model');
 		if($this->productcategory_model->removeById($id)){
-			$this->load->view('success_view');
+			$this->load->view('manager/success_view');
 		}else{
 			echo "<h2>Delete khong thanh cong</h2>";
 		}
@@ -44,7 +44,7 @@ class productcategory extends CI_Controller {
 		$this->load->model('productcategory_model');
 		$ketqua = $this->productcategory_model->getDataById($id);
 		$ketqua = array('dulieukq' => $ketqua);
-		$this->load->view('category_update_view', $ketqua);
+		$this->load->view('manager/category_update_view', $ketqua);
 	}
 	public function category_update()
 	{
@@ -57,7 +57,7 @@ class productcategory extends CI_Controller {
 		 	$ketqua = $this->productcategory_model->getAllData();
 			$ketqua = array('mangketqua' => $ketqua);
 
-			$this->load->view('productcategory_view', $ketqua);
+			$this->load->view('manager/productcategory_view', $ketqua);
 		}else{
 			echo '<h2>Update khong thanh cong</h2>';
 		}
