@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: localhost
--- Thời gian đã tạo: Th4 24, 2018 lúc 12:10 PM
+-- Thời gian đã tạo: Th5 06, 2018 lúc 05:33 AM
 -- Phiên bản máy phục vụ: 5.7.21-log
 -- Phiên bản PHP: 7.2.2
 
@@ -65,15 +65,22 @@ CREATE TABLE `ordertable` (
 CREATE TABLE `product` (
   `product_id` int(11) NOT NULL,
   `product_name` varchar(100) NOT NULL,
+  `company` varchar(255) NOT NULL,
   `category_id` int(11) NOT NULL,
   `price` int(11) NOT NULL,
   `discount` int(11) NOT NULL,
   `image` varchar(200) NOT NULL,
   `intro` text NOT NULL,
-  `evaluate` double NOT NULL,
-  `view` int(11) NOT NULL,
   `quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+
+--
+-- Đang đổ dữ liệu cho bảng `product`
+--
+
+INSERT INTO `product` (`product_id`, `product_name`, `company`, `category_id`, `price`, `discount`, `image`, `intro`, `quantity`) VALUES
+(2, '', 'Sam sung', 6, 400000, 3, 'Fileupload/product/bep_nuong_kagaru.jpg', 'Mặt hàng bán chạy nhất cho các gia đình', 34),
+(5, 'Bếp nướng không khói thông minh', 'Aoran', 6, 1000000, 4, 'Fileupload/product/bep-nuong-khong-khoi-Electric-barbecue-grill-2000W-1.jpg', 'Mặt hàng bán chạy nhất cho các căn hộ cao cấp', 23);
 
 -- --------------------------------------------------------
 
@@ -93,8 +100,6 @@ CREATE TABLE `productcategory` (
 
 INSERT INTO `productcategory` (`category_id`, `category_name`, `parent_id`) VALUES
 (1, 'Điện gia dụng nhà bếp', 0),
-(2, 'Nồi cơm điện', 1),
-(3, 'Bếp', 1),
 (4, 'Chảo', 1),
 (5, 'Đồ dùng nhà bếp', 1),
 (6, 'Đồ nướng', 1),
@@ -196,13 +201,13 @@ ALTER TABLE `ordertable`
 -- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT cho bảng `productcategory`
 --
 ALTER TABLE `productcategory`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT cho bảng `transaction`

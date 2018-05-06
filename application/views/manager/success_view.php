@@ -2,23 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Cap nhat thanh cong vao co so du lieu</title>
-	<script type="text/javascript" src="<?php echo base_url() ?>vendor/js/bootstrap.js"></script>
- 	<script type="text/javascript" src="<?php echo base_url() ?>vendor/js/1.js"></script>
-	<link rel="stylesheet" href="<?php echo base_url() ?>vendor/css/bootstrap.css">
-	<link rel="stylesheet" href="<?php echo base_url() ?>vendor/css/font-awesome.css">
- 	<link rel="stylesheet" href="<?php echo base_url() ?>vendor/css/1.css">
+	<title>Cập nhật thành công vào cơ sở dữ liệu</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container">
 		<h4 class="text-xs-center">
 			<div class="alert alert-success">
-				<p>Ban da cap nhat <strong> Thanh cong</strong> vao CSDL</p>
+				<p>Bạn đã cập nhật <strong> Thành công </strong> vào CSDL</p>
 			</div>
 		</h4>
 		<br>
-		<div class="row text-xs-center">
-			<a href="<?php echo base_url(); ?>/index.php/productcategory" class="btn btn-primary">Tro ve</a></button>
+		<div class="row justify-content-center">
+			<a href="<?php echo base_url(); ?>" class="btn btn-primary">Trở về</a></button>
 		</div>
 		
 	</div>

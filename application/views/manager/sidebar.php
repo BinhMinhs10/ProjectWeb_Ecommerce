@@ -23,7 +23,7 @@
                 <a href="<?php echo base_url(); ?>index.php/productcategory">Quản lý danh mục SP</a>
             </li>
             <li>
-                <a href="#">Quản lý sản phẩm</a>
+                <a href="<?php echo base_url(); ?>index.php/product">Quản lý sản phẩm</a>
             </li>
             <li>
                 <a href="#">Quản lý user</a>

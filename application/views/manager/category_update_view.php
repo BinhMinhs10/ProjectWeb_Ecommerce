@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-	<title> Hien thi danh sach nhan vien </title>
+	<title> Hiển thị danh mục </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">  
-	<script type="text/javascript" src="<?php echo base_url() ?>vendor/js/bootstrap.js"></script>
- 	<script type="text/javascript" src="<?php echo base_url() ?>vendor/1.js"></script>
-	<link rel="stylesheet" href="<?php echo base_url() ?>vendor/css/bootstrap.css">
-	<link rel="stylesheet" href="<?php echo base_url() ?>vendor/css/font-awesome.css">
- 	<link rel="stylesheet" href="<?php echo base_url() ?>vendor/1.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body >
  	<div class="container">
