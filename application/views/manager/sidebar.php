@@ -40,11 +40,8 @@
         </ul>
     </div>
     <!-- /#sidebar-wrapper -->
-
-<<<<<<< HEAD
-=======
     <!-- Bootstrap core JavaScript -->
->>>>>>> 1613c548cefc5d1a758d354c949557808138fa1a
+
 
     <!-- Menu Toggle Script -->
     <script>

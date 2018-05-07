@@ -5,21 +5,62 @@ class product extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+		
+		// Load Pagination library
+    	$this->load->library('pagination');
+		
+		$this->load->model('product_model');
 	}
+
 
 	public function index()
 	{
-		$this->load->model('product_model');
-		$product = $this->product_model->getAllData();
-		
 		$this->load->model('productcategory_model');
+		$categories = $this->productcategory_model->getAllData();
+		$categories = array('categorys' => $categories);
+		$this->load->view('manager/product_view',$categories);
+	}
+	//==================================================================================
+	//
+	public function loadRecord($rowno=0){
+
+	    // Row per page
+	    $rowperpage = 6;
+
+	    // Row position
+	    if($rowno != 0){
+	   		$rowno = ($rowno-1) * $rowperpage;
+	    }
+	 
+	    // All records count
+	    $allcount = $this->product_model->getrecordCount();
+
+	    // Get records
+	    $product = $this->product_model->getData($rowperpage,$rowno);
+	 	
+	 	// Get all category
+	    $this->load->model('productcategory_model');
 		$category = $this->productcategory_model->getAllData();
 
-		$ketqua = array('products' => $product, 'categorys' => $category);
+	    // Pagination Configuration
+	    $config['use_page_numbers'] = TRUE;
+	    $config['total_rows'] = $allcount;
+	    $config['per_page'] = $rowperpage;
 
+	    // Initialize
+	    $this->pagination->initialize($config);
 
-		$this->load->view('manager/product_view', $ketqua);
+	    // Initialize $data Array
+	    $data['pagination'] = $this->pagination->create_links();
+	    $data['result'] = $product;
+	    $data['categories'] = $category;
+	    $data['row'] = $rowno;
+
+	    echo json_encode($data);
+	 
 	}
+
+
 	//---------------------------------------------------------------------------------
 	public function product_add()
 	{
@@ -74,10 +115,10 @@ class product extends CI_Controller {
 		$quantity = $this->input->post('quantity');
 
 
-		$this->load->model('product_model');
+		
 		$flag = $this->product_model->insertDataToMysql($product_name,$company,$category_id,$price,$discount,$image,$intro,$quantity);
 		if ($flag) {
-			$this->load->model('product_model');
+			
 			$product = $this->product_model->getAllData();
 			
 			$this->load->model('productcategory_model');
@@ -93,7 +134,7 @@ class product extends CI_Controller {
 	}
 
 	public function product_delete($id){
-		$this->load->model('product_model');
+		
 		if($this->product_model->removeById($id)){
 			$this->load->view('manager/success_view');
 		}else{
@@ -103,7 +144,7 @@ class product extends CI_Controller {
 	
 	public function getProduct($id){
 
-		$this->load->model('product_model');
+		
 		$ketqua = $this->product_model->getDataById($id);
 
 		$this->load->model('productcategory_model');
@@ -166,7 +207,7 @@ class product extends CI_Controller {
 			$image = "Fileupload/product/noproduct.png";
 		}
 
-		$this->load->model('product_model');
+		
 
 		if ($this->product_model->updateById($product_id,$product_name,$company,$category_id,$price,$discount,$image,$intro,$quantity)) {
 		 	$this->load->view('manager/success_view');

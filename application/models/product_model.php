@@ -61,6 +61,28 @@ class product_model extends CI_Model {
 
 		return $this->db->update('product', $data);
 	}
+
+	public function getData($length,$start) {
+	    // $rowperpage length, $rowno start
+	    $this->db->select('*');
+	    //$this->db->order_by('product_id', 'desc');
+	    $this->db->from('product');
+	    $this->db->limit($length, $start);  
+	    $query = $this->db->get();
+	 	
+	    return $query->result_array();
+	}
+
+	// Select total records
+	public function getrecordCount() {
+
+	    $this->db->select('count(*) as allcount');
+	    $this->db->from('product');
+	    $query = $this->db->get();
+	    $result = $query->result_array();
+	 
+	    return $result[0]['allcount'];
+	}
 }
 
 /* End of file product_model.php */
