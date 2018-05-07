@@ -87,7 +87,7 @@
 		 				<?php foreach ($products as $value): ?>
 							<div class="col-sm-4">
 								<div class="card card-block">
-									<img style="height: 350px; width: 350px" class="card-img-top" src="<?php echo base_url().$value['image']; ?>" alt="Card images" >
+									<img  style="height: 350px" class="card-img-top img-fluid img-thumbnail" src="<?php echo base_url().$value['image']; ?>" alt="Card images" >
 									<div class="card-body">
 										<h4 class="card-title"><?= $value['product_name'] ?></h4>
 				 						<p class="card-text category_id">Id category: <b><?= $value['category_id'] ?></b></p>
