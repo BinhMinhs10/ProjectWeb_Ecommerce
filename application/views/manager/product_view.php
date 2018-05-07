@@ -28,7 +28,7 @@
 	 		<div class="container-fluid">
 	 			<div class="justify-content-center">
 					<h2>Form below allow add product</h2><hr>
-					<form method="post" enctype="multipart/form-data" action="<?php echo base_url(); ?>index.php/product/product_add">
+					<form method="post" enctype="multipart/form-data" action="<?php echo base_url(); ?>index.php/manager/product/product_add">
 						<div class="form-group row">
 							<div class="col-sm-6">
 								<label for="name"><strong>Tên sản phẩm</strong></label>
@@ -94,8 +94,10 @@
  				<div class="row" id='postsList'>
 	 				
 	 			</div>	
-	 			
-				<div style='margin-top: 10px;' id='pagination'></div>
+	 			<center>
+	 				<div style='margin-top: 10px;' id='pagination'></div>
+	 			</center>
+				
 	 		</div><!-- end full container-->
  		</div>
  	</div>
@@ -116,7 +118,7 @@
 	    	// Load pagination
 	     	function loadPagination(pagno){
 	       		$.ajax({
-	         		url: '<?=base_url()?>index.php/product/loadRecord/'+pagno,
+	         		url: '<?=base_url()?>index.php/manager/product/loadRecord/'+pagno,
 	         		type: 'get',
 	         		dataType: 'json',
 	         		success: function(response){
@@ -148,6 +150,7 @@
 		          	var tr = '<div class="col-sm-4">';
 		          	tr += '<div class="card card-block">';
 		          	tr += '<img  style="height: 350px" class="card-img-top img-fluid img-thumbnail" src="<?php echo base_url(); ?>'+image+'" alt="Card images" >';
+		          	tr += '<h4 class="card-title"><b>'+product_name+'</b></h4>';
 		          	tr += '<p class="card-text category_id">Id category: <b>'+category_id+'</b></p>';
 		          	tr += '<p class="card-text company">Hãng sản xuất: <b>'+company+'</b></p>';
 		          	tr += '<p class="card-text price">Giá: <b>'+ price+'</b></p>';
@@ -155,8 +158,8 @@
 		          	tr += '<p class="card-text discount">Khuyến mại: <b>'+discount+'</b></p>';
 		          	tr += '<p class="card-text quantity">Số Lượng: <b>'+quantity+'</b></p>';
 		          	tr += '<p class="card-text intro">Giới thiệu: <b>'+intro+'</b></p><br/>';
-		          	tr += '<p class="card-text editns"><small><a href="<?= base_url(); ?>/index.php/product/getProduct/'+product_id+'" class="btn btn-warning btn-xs">Sửa sản phẩm</a></small></p>';
-		          	tr += '<p class="card-text delns"><small><a href="<?= base_url(); ?>/index.php/product/product_delete/'+product_id+'" class="btn btn-outline-danger btn-xs">Xóa sản phẩm</a></small></p>';
+		          	tr += '<p class="card-text editns"><small><a href="<?= base_url(); ?>/index.php/manager/product/getProduct/'+product_id+'" class="btn btn-warning btn-xs">Sửa sản phẩm</a></small></p>';
+		          	tr += '<p class="card-text delns"><small><a href="<?= base_url(); ?>/index.php/manager/product/product_delete/'+product_id+'" class="btn btn-outline-danger btn-xs">Xóa sản phẩm</a></small></p>';
 		          	tr += '</div></div></br>';
 		          	
 		          	  	

@@ -5,11 +5,12 @@ class productcategory extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->model('productcategory_model');
 	}
 
 	public function index()
 	{
-		$this->load->model('productcategory_model');
+		
 		$ketqua = $this->productcategory_model->getAllData();
 		$ketqua = array('mangketqua' => $ketqua);
 
@@ -24,18 +25,24 @@ class productcategory extends CI_Controller {
 		$this->load->model('productcategory_model');
 		$trangthai = $this->productcategory_model->insertDataToMysql($ten,$parent_id);
 		if ($trangthai) {
-			$this->load->view('manager/success_view');
+			$ketqua = $this->productcategory_model->getAllData();
+			$ketqua = array('mangketqua' => $ketqua);
+
+			$this->load->view('manager/productcategory_view', $ketqua);
 		}else{
-			echo '<h2>That bai xem lai code</h2>';
+			$this->load->view('errors/notify_error');
 		}
 	}
 	public function category_delete($id)
 	{
 		$this->load->model('productcategory_model');
 		if($this->productcategory_model->removeById($id)){
-			$this->load->view('manager/success_view');
+			$ketqua = $this->productcategory_model->getAllData();
+			$ketqua = array('mangketqua' => $ketqua);
+
+			$this->load->view('manager/productcategory_view', $ketqua);
 		}else{
-			echo "<h2>Delete khong thanh cong</h2>";
+			$this->load->view('errors/notify_error');
 		}
 	}
 
@@ -59,7 +66,7 @@ class productcategory extends CI_Controller {
 
 			$this->load->view('manager/productcategory_view', $ketqua);
 		}else{
-			echo '<h2>Update khong thanh cong</h2>';
+			$this->load->view('errors/notify_error');
 		}
 	}
 

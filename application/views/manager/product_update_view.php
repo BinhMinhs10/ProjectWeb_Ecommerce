@@ -20,7 +20,7 @@
  			</div>
 	 		<div class="container-fluid">
 	 			<div class="justify-content-center">
-					<form method="post" enctype="multipart/form-data" action="<?php echo base_url(); ?>index.php/product/product_update">
+					<form method="post" enctype="multipart/form-data" action="<?php echo base_url(); ?>index.php/manager/product/product_update">
 						<?php foreach ($product as $value): ?>
 
 							<input type="hidden" name="product_id" value="<?= $value['product_id'] ?>">

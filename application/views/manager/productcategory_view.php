@@ -28,9 +28,9 @@
 			 						<p class="card-text parent_id">Id: <b><?= $value['category_id'] ?></b></p>
 			 						<p class="card-text parent_id">Parent id: <b><?= $value['parent_id'] ?></b></p>
 			 					
-									<p class="card-text editns"><small><a href="<?= base_url(); ?>/index.php/productcategory/getCategoty/<?= $value['category_id'] ?>" class="btn btn-warning btn-xs">Sửa nội dung</a></small></p>
+									<p class="card-text editns"><small><a href="<?= base_url(); ?>/index.php/manager/productcategory/getCategoty/<?= $value['category_id'] ?>" class="btn btn-warning btn-xs">Sửa nội dung</a></small></p>
 
-									<p class="card-text editns"><small><a href="<?= base_url(); ?>/index.php/productcategory/category_delete/<?= $value['category_id'] ?>" class="btn btn-outline-danger btn-xs">Xóa nội dung</a></small></p>
+									<p class="card-text editns"><small><a href="<?= base_url(); ?>/index.php/manager/productcategory/category_delete/<?= $value['category_id'] ?>" class="btn btn-outline-danger btn-xs">Xóa nội dung</a></small></p>
 		 						</div>
 							</div><br/>
 							<!-- end card-->
@@ -41,7 +41,7 @@
 				</div>
 				<div class="justify-content-center">
 					<h2>Form below allow add categogy</h2><hr>
-					<form method="post" enctype="multipart/form-data" action="<?php echo base_url(); ?>index.php/productcategory/category_add">
+					<form method="post" enctype="multipart/form-data" action="<?php echo base_url(); ?>index.php/manager/productcategory/category_add">
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="form-group">

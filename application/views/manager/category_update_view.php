@@ -18,7 +18,7 @@
  	<div class="container">
  		
 		<div>
-		<form method="post" action="<?= base_url(); ?>/index.php/productcategory/category_update">
+		<form method="post" action="<?= base_url(); ?>/index.php/manager/productcategory/category_update">
 
 			<?php foreach ($dulieukq as $value): ?>
 				<div class="form-group row">
@@ -48,7 +48,7 @@
 			<div class="form-group row text-xs-center">
 				<div class="col-sm-offset-2 col-sm-10">
 					<button type="submit" class="btn btn-outline-success">Lưu lại</button>
-					<a href="<?php echo base_url(); ?>/index.php/productcategory" class="btn btn-primary">Trở về</a></button>
+					<a href="<?php echo base_url(); ?>/index.php/manager/productcategory" class="btn btn-primary">Trở về</a></button>
 				</div>
 			</div>
 		</form>

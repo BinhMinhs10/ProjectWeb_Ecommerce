@@ -20,13 +20,13 @@
                 <a href="">Quản lý Admin</a>
             </li>
             <li>
-                <a href="<?php echo base_url(); ?>index.php/productcategory">Quản lý danh mục SP</a>
+                <a href="<?php echo base_url(); ?>index.php/manager/productcategory">Quản lý danh mục SP</a>
             </li>
             <li>
-                <a href="<?php echo base_url(); ?>index.php/product">Quản lý sản phẩm</a>
+                <a href="<?php echo base_url(); ?>index.php/manager/product">Quản lý sản phẩm</a>
             </li>
             <li>
-                <a href="#">Quản lý user</a>
+                <a href="<?php echo base_url(); ?>index.php/manager/user">Quản lý user</a>
             </li>
             <li>
                 <a href="#">Quản lý đơn hàng</a>

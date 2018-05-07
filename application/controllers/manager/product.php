@@ -119,26 +119,31 @@ class product extends CI_Controller {
 		$flag = $this->product_model->insertDataToMysql($product_name,$company,$category_id,$price,$discount,$image,$intro,$quantity);
 		if ($flag) {
 			
-			$product = $this->product_model->getAllData();
-			
 			$this->load->model('productcategory_model');
-			$category = $this->productcategory_model->getAllData();
-
-			$ketqua = array('products' => $product, 'categorys' => $category);
-
-
-			$this->load->view('manager/product_view', $ketqua);
+			
+			$categories = $this->productcategory_model->getAllData();
+			
+			$categories = array('categorys' => $categories);
+			
+			$this->load->view('manager/product_view',$categories);
 		}else{
-			echo '<h2>Thất bại , Chúng tôi rất lấy làm tiếc</h2>';
+			$this->load->view('errors/notify_error');
 		}
 	}
 
 	public function product_delete($id){
 		
 		if($this->product_model->removeById($id)){
-			$this->load->view('manager/success_view');
+			
+			$this->load->model('productcategory_model');
+			
+			$categories = $this->productcategory_model->getAllData();
+			
+			$categories = array('categorys' => $categories);
+			
+			$this->load->view('manager/product_view',$categories);
 		}else{
-			echo "<h2>Delete khong thanh cong</h2>";
+			$this->load->view('errors/notify_error');
 		}
 	}
 	
@@ -163,8 +168,7 @@ class product extends CI_Controller {
 		$discount = $this->input->post('discount');
 		$intro = $this->input->post('intro');
 		$quantity = $this->input->post('quantity');
-		//$image = $this->input->post('image');
-
+		
 
 		if ($_FILES['image']["name"]) {
 		
@@ -210,9 +214,17 @@ class product extends CI_Controller {
 		
 
 		if ($this->product_model->updateById($product_id,$product_name,$company,$category_id,$price,$discount,$image,$intro,$quantity)) {
-		 	$this->load->view('manager/success_view');
+
+
+		 	$this->load->model('productcategory_model');
+			
+			$categories = $this->productcategory_model->getAllData();
+			
+			$categories = array('categorys' => $categories);
+			
+			$this->load->view('manager/product_view',$categories);
 		}else{
-			echo '<h2>Update không thành công</h2>';
+			$this->load->view('errors/notify_error');
 		}
 	}
 

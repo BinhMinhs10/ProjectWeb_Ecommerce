@@ -17,7 +17,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="collapse">
 				<ul class="navbar-nav">
-					<li class="nav-item"><a href="<?php echo base_url() ?>index.php/home" class="nav-link text-white btn-outline-danger" >Trang chủ</a></li>
+					<li class="nav-item"><a href="<?php echo base_url() ?>index.php/manager/home" class="nav-link text-white btn-outline-danger" >Trang chủ</a></li>
 					<li class="nav-item"><a href="#menu-toggle" class="nav-link text-white btn-outline-danger" id="menu-toggle">Menu</a></li>
 					<li class="nav-item"><a href="#" class="nav-link text-white btn-outline-danger" >Chăm sóc khách hàng</a></li>
 					<li class="nav-item"><a href="#" class="nav-link text-white btn-outline-danger" >Tin tức</a></li>
