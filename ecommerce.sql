@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: localhost
--- Thời gian đã tạo: Th5 06, 2018 lúc 05:33 AM
+-- Thời gian đã tạo: Th5 08, 2018 lúc 03:09 AM
 -- Phiên bản máy phục vụ: 5.7.21-log
 -- Phiên bản PHP: 7.2.2
 
@@ -56,6 +56,13 @@ CREATE TABLE `ordertable` (
   `status` bit(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16;
 
+--
+-- Đang đổ dữ liệu cho bảng `ordertable`
+--
+
+INSERT INTO `ordertable` (`order_id`, `transaction_id`, `product_id`, `quantity`, `status`) VALUES
+(1, 1, 7, 3, b'1');
+
 -- --------------------------------------------------------
 
 --
@@ -79,8 +86,15 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`product_id`, `product_name`, `company`, `category_id`, `price`, `discount`, `image`, `intro`, `quantity`) VALUES
-(2, '', 'Sam sung', 6, 400000, 3, 'Fileupload/product/bep_nuong_kagaru.jpg', 'Mặt hàng bán chạy nhất cho các gia đình', 34),
-(5, 'Bếp nướng không khói thông minh', 'Aoran', 6, 1000000, 4, 'Fileupload/product/bep-nuong-khong-khoi-Electric-barbecue-grill-2000W-1.jpg', 'Mặt hàng bán chạy nhất cho các căn hộ cao cấp', 23);
+(6, 'Nồi cơm SHD8601', 'Sun House', 9, 400000, 3, 'Fileupload/product/CookSunhouse.jpg', 'Mặt hàng bán chạy nhất cho sinh viên', 34),
+(7, 'Bếp nướng không khói thông minh', 'Sun House', 10, 1000000, 2, 'Fileupload/product/29462_19881_lau-nuong-dien-sunhouse-shd4650.jpg', 'Mặt hàng bán chạy nhất cho các căn hộ cao cấp', 34),
+(8, 'Bếp nướng SHD4607', 'Kangaru', 6, 2000000, 10, 'Fileupload/product/bep-nuong-khong-khoi-Electric-barbecue-grill-2000W-1.jpg', 'Mặt hàng bán chạy nhất cho các gia đình', 54),
+(9, 'Bếp nướng điện KG189G', 'Kangaru', 6, 2000000, 3, 'Fileupload/product/Bep-nuong-than-hoa-10.jpg', 'Mặt hàng bán chạy nhất cho các khu trọ', 23),
+(10, 'Bếp nướng không khói thông minh', 'Eton', 5, 1000000, 4, 'Fileupload/product/chien-thuc-an-2.jpg', 'Mặt hàng bán chạy nhất cho các khu trọ', 34),
+(11, 'Ấm điện SK-1800', 'Eton', 10, 1000000, 2, 'Fileupload/product/d794dc5757847671e156e622af8eb4b6.jpg', 'Mặt hàng bán chạy nhất cho các khu trọ', 23),
+(12, 'Nồi chiên không khói NC-1234', 'Magic', 10, 5000000, 4, 'Fileupload/product/noi-chien-khong-dau-perfect-usa-3l-new-den-4405-4920505-d13eb84e1c1cc1a04a254fd6fae60961-catalog_233.jpg', 'Mặt hàng bán chạy nhất cho các gia đình', 34),
+(13, 'Bộ nồi chống dính N-2325', 'Aoran', 5, 1000000, 3, 'Fileupload/product/b1-0.jpg', 'Mặt hàng bán chạy nhất cho các nhà hàng', 23),
+(14, 'Bếp chiên BC-23832', 'Aoran', 6, 5000000, 2, 'Fileupload/product/6d04ff5e665106e34fa47ba22af4da60.jpg', 'Mặt hàng bán chạy nhất cho các nhà hàng', 45);
 
 -- --------------------------------------------------------
 
@@ -104,7 +118,9 @@ INSERT INTO `productcategory` (`category_id`, `category_name`, `parent_id`) VALU
 (5, 'Đồ dùng nhà bếp', 1),
 (6, 'Đồ nướng', 1),
 (7, 'Máy say, trộn, nghiền', 1),
-(8, 'Bát, đĩa', 1);
+(8, 'Bát, đĩa', 1),
+(9, 'Nồi cơm điện', 1),
+(10, 'Thiết bị nấu ăn gia đình', 1);
 
 -- --------------------------------------------------------
 
@@ -117,9 +133,15 @@ CREATE TABLE `transaction` (
   `user_id` int(11) NOT NULL,
   `money_amount` int(11) NOT NULL,
   `create_date` date NOT NULL,
-  `time_require` int(11) NOT NULL,
   `status` bit(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+
+--
+-- Đang đổ dữ liệu cho bảng `transaction`
+--
+
+INSERT INTO `transaction` (`transaction_id`, `user_id`, `money_amount`, `create_date`, `status`) VALUES
+(1, 3, 500000, '2018-05-07', b'0');
 
 -- --------------------------------------------------------
 
@@ -135,6 +157,14 @@ CREATE TABLE `user` (
   `phone_number` varchar(20) NOT NULL,
   `address` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+
+--
+-- Đang đổ dữ liệu cho bảng `user`
+--
+
+INSERT INTO `user` (`user_id`, `user_name`, `password`, `email`, `phone_number`, `address`) VALUES
+(3, 'BinhMinhs10', '123456', 'nguyenbinhminh07101997@gmail.com', '01667351997', 'Bách khoa , Hà Nội'),
+(4, 'admin', '1234', '20152452@student.hust.edu.vn', '0166735345', 'Bách khoa , Hà Nội');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -195,31 +225,31 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT cho bảng `ordertable`
 --
 ALTER TABLE `ordertable`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT cho bảng `productcategory`
 --
 ALTER TABLE `productcategory`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT cho bảng `transaction`
 --
 ALTER TABLE `transaction`
-  MODIFY `transaction_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `transaction_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Các ràng buộc cho các bảng đã đổ

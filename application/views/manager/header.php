@@ -7,7 +7,7 @@
 
 <div class="container-fluid">
 	<div class="fixed-top">
-		<div class='alert-primary' style="text-align: right; font-size: 30px">BIG WEB SALE HOUSEWARE - GROUP 12</div>
+		<div class='alert-primary' style="text-align: right; font-size: 20px">BIG WEB SALE HOUSEWARE - GROUP 12</div>
 		<nav class="navbar navbar-expand-md bg-info navbar-dark">
 			<a href="#" class="navbar-brand">
 				<img src="<?php echo base_url(); ?>images/please.jpg" alt="Logo" style="width: 40px">
@@ -19,7 +19,6 @@
 				<ul class="navbar-nav">
 					<li class="nav-item"><a href="<?php echo base_url() ?>index.php/manager/home" class="nav-link text-white btn-outline-danger" >Trang chủ</a></li>
 					<li class="nav-item"><a href="#menu-toggle" class="nav-link text-white btn-outline-danger" id="menu-toggle">Menu</a></li>
-					<li class="nav-item"><a href="#" class="nav-link text-white btn-outline-danger" >Chăm sóc khách hàng</a></li>
 					<li class="nav-item"><a href="#" class="nav-link text-white btn-outline-danger" >Tin tức</a></li>
 					<li class="nav-item dropdown">
 						<a href="#" class="nav-link dropdown-toggle text-white btn-outline-danger" data-toggle="dropdown">Dropdown link</a>

@@ -29,11 +29,9 @@
                 <a href="<?php echo base_url(); ?>index.php/manager/user">Quản lý user</a>
             </li>
             <li>
-                <a href="#">Quản lý đơn hàng</a>
+                <a href="<?php echo base_url(); ?>index.php/manager/order">Quản lý đơn hàng</a>
             </li>
-            <li>
-                <a href="#">Quản lý ...</a>
-            </li>
+            
             <li>
                 <a href="#">Contact</a>
             </li>

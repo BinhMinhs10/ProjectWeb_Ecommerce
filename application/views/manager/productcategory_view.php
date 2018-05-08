@@ -59,7 +59,7 @@
 						
 						<div class="row justify-content-center">
 							<button type="submit" class="btn btn-success">Thêm mới</button>
-							<===>
+							&nbsp; &nbsp; &nbsp;
 							<button class="btn btn-danger" type="reset">Nhập lại</button>
 						</div>
 						

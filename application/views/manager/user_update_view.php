@@ -27,7 +27,7 @@
 						<div class="row">
 							<label for="username" class="col-sm-4 form-control-label text-xs-right">Username</label>
 							<div class="col-sm-8">
-								<input type="hidden" name="id" value="<?= $value['user_name'] ?>">
+								
 								<input type="text" name="username" class="form-control" id="username" value="<?= $value['user_name'] ?>">
 							</div>
 						</div>
