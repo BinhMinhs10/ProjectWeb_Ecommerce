@@ -18,7 +18,16 @@ class clientHome extends CI_Controller {
                 $this->load->model('productcategory_model');
                 $root_categories = $this->productcategory_model->getRootCategories();
                 $this->load->model('product_model');
-                $product_list = $this->product_model->getAllData();
+                if(!isset($_GET['category_id'])){
+                    
+                    $product_list = $this->product_model->getAllData();
+                }
+                else{
+                    
+                    $product_list = $this->product_model->getDataByCategory($_GET['category_id']);
+                }
+                
+                
                 $parameters = array("root_categories" => $root_categories, "product_list" => $product_list);
                 
                 

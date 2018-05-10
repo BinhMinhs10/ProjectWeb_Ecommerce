@@ -51,10 +51,33 @@
 <!--        <div class="item-shoping">-->
 <!--          <a href="#"><img class="svg img-mobile-menu" src="img/gio hang _ mobile.svg" /> <span class="des">Giỏ hàng</span></a>-->
 <!--        </div>-->
-        <div class="item-shoping border">
-                      <a href="javascript:void(0)" id="btnLogin"
-               data-url="/ajax/get-login-template"><span class="user">Đăng nhập</span></a>
+
+        <?php
+            
+            if(!isset($_SESSION["user"])){
+                
+                ?>
+                    <div class="item-shoping border">
+                        <a href="<?php echo base_url() ?>index.php/signinController"><span class="user">Đăng nhập</span>
+                      </a>
                   </div>
+                <?php
+            }
+            else{
+                
+                ?>
+<div class="item-shoping border" style="color: white">
+                        <?php echo "Hello ".$_SESSION["user"]["user_name"] ?>
+                    </div>
+                    <div class="item-shoping border">
+                        <a href="<?php echo base_url() ?>index.php/signoutController"><span class="user">Đăng xuất</span>
+                      </a>
+                  </div>
+                <?php
+            }
+        
+        ?>
+        
       </div>
     </div>
 
@@ -282,7 +305,7 @@
     <?php foreach ($root_categories as $root_categry):?>
 
     <li class="dropdown laptop">
-      <a href="/sim-so" class="dropdown-toggle disabled" data-toggle="dropdown">
+      <a href="" class="dropdown-toggle disabled" data-toggle="dropdown">
         <?=$root_categry->getCategoryName()?>
       </a>
       <div class="dropdown-menu">
@@ -290,7 +313,7 @@
             
            <?php foreach ($root_categry->getSubCategoryList() as $sub_category):?> 
             
-            <li><a href="/sim-so"> <?=$sub_category->getCategoryName()?> </a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/clientHome?category_id=<?php echo $sub_category->getCategoryID() ?>"> <?=$sub_category->getCategoryName()?> </a></li>
             
           
           <?php endforeach; ?>

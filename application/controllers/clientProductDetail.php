@@ -19,7 +19,7 @@ class clientProductDetail extends CI_Controller {
                 $root_categories = $this->productcategory_model->getRootCategories();
                 $this->load->model('product_model');
                 $id = $_GET['id'];
-                $product = $this->product_model->getDataById($id);
+                $product = $this->product_model->getDataById($id)[0];
                 
                 $parameters = array("root_categories" => $root_categories, "product" => $product);
                 
