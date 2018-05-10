@@ -1,35 +1,1723 @@
 
-        <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="vi" dir="ltr">
-    <head>
-        <?php require_once 'Modules/others/module3.php'; ?>
-    </head>
-    <body class="d">
-        <?php require_once 'Modules/others/module4.php'; ?>
-        <div class="ty-tygh" id="tygh_container">
-                <?php require_once 'Modules/others/module1.php'; ?>
-                <div class="ty-helper-container" id="tygh_main_container">
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <link rel="manifest" href="/manifest.json">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="title" content="Thiết bị | Shop.viettel.vn" />
+<meta name="description" content="Hướng dẫn cách đăng ký 3G, chọn sim số đẹp, mua điện thoại chính hãng, lắp đặt internet truyền hình Viettel. Các chương trình khuyến mại lớn của Viettel." />
+<meta name="keywords" content="viettel shop, shop online viettel, 3G viettel, đăng ký 3g viettel, dk 3g viettel, sim so dep viettel, so dep nam sinh, mua dien thoai chinh hang, smartphone chính hãng, lắp đặt internet, truyền hình, sim số đẹp, sim viettel, sim phong thuy, sim gia re" />
+<meta name="robots" content="index, follow" />
+    <title>Thiết bị | Shop.viettel.vn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta property="og:url" content="https://shop.viettel.vn" />
+      <meta property="og:description" content="Website mua sắm online chính thức của Viettel - shop.viettel.vn" />
+      <meta property="og:title" content="Website mua sắm online chính thức của Viettel - shop.viettel.vn" />
+      <meta property="og:site_name" content="Shop.viettel.vn - Website mua sắm online chính thức của Viettel" />
+      <meta property="og:image" content="https://shop.viettel.vn/img/SCREE_3mobile1200x628.png" />
+      <meta property="og:type" content="website" />
+      <meta name="dc.publisher" content="shop.viettel.vn" />
+      <meta name="dc.identifier" content="shop.viettel.vn" />
+      <meta name="dc.title" content="Website mua sắm online chính thức của Viettel - shop.viettel.vn"/>
+      <meta name="dc.keywords" content="3G viettel, mimax, mimax1.5, CTKM, miễn phí, Đăng ký 3G, 3G online..."/>
+      <meta name="news_keywords" content="smartphone chính hãng, di động, 3G viettel, đăng ký 3G, mimax, mimax1.5, sim viettel, sim số đẹp, internet viettel, lắp đặt internet viettel, lắp đặt truyền hình viettel, khuyến mãi, miễn phí, hotline bán hàng 24/24..."/>
+      <meta name="geo.country" content="VN" />
+              <meta property="fb:app_id" content="1365525213459999" />
+    
+          <link rel="shortcut icon" href="/images/favicon.ico" />
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="https://shop.viettel.vn/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://shop.viettel.vn/css/base.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://shop.viettel.vn/css/settings.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://shop.viettel.vn/css/style.css?v=2.0" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://shop.viettel.vn/css/style_ex.css?v=1" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://shop.viettel.vn/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://shop.viettel.vn/css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://shop.viettel.vn/css/frontend/coder_update.css?v=3" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://shop.viettel.vn/js/revolution/css/settings.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://shop.viettel.vn/js/revolution/css/layers.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://shop.viettel.vn/js/revolution/css/navigation.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://shop.viettel.vn/css/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://fonts.googleapis.com/css?family=Orbitron:400,700" />
+    <script type="text/javascript" src="https://shop.viettel.vn/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/jquery-ui.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/owl.carousel.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/frontend/device.js"></script>
+<script type="text/javascript" src="https://shop.viettel.vn/js/frontend/comment.js"></script>
 
-                    <?php require_once 'Modules/header.php'; ?>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NX87J8C');</script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NX87J8C"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-                    <?php require_once 'Modules/product_list_content.php'; ?>
+        <?php require_once('Modules/header.php') ?>      
+    
+    <input type="hidden" name="_csrf_token" value="d7f15ff6d71e4e4077fb59f10d31e95e" id="csrf_token" />    
+<div class="title-page container"><div class="col-md-12"><a href="/">Trang chủ</a> > <a href="javascript:void(0)">Điện thoại</a></div></div>
+<section id="mobileFilter" class="hidden-lg hidden-md">
+<form id="formMobileFilterDevice" action="/ajax/danh-sach-thiet-bi-loc" method="post">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <button type="button" class="filter_button" data-toggle="modal" data-target="#filter"><i class="fa fa-filter" aria-hidden="true"></i> Lọc</button>
+      </div>
+      <div class="col-xs-6">
+        <button type="button" class="filter_button" data-toggle="modal" data-target="#sort"><i class="fa fa-sort" aria-hidden="true"></i> Sắp xếp</button>
+      </div>
+    </div>
+  </div>
+  <div style="height:20px"></div>
+  <div id="filter" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="margin:0px">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Lọc bởi</h4>
+        </div>
+        <div class="modal-body">
+          <div class="filter_div"><input type="checkbox" class="css-checkbox" ctl="filter_category1"/><label class="css_label"><button type="button" onclick="FilterBy(this.innerText)" class="filter_category_button" data-toggle="modal" data-target="#filter_category1">Loại sản phẩm</button></label></div>
+          <div class="filter_div"><input type="checkbox" class="css-checkbox" ctl="filter_category2"/><label class="css_label"><button type="button" onclick="FilterBy(this.innerText)" class="filter_category_button" data-toggle="modal" data-target="#filter_category2">Thương hiệu</button></label></div>
+          <div class="filter_div"><input type="checkbox" class="css-checkbox" ctl="filter_category3"/><label class="css_label"><button type="button" onclick="FilterBy(this.innerText)" class="filter_category_button" data-toggle="modal" data-target="#filter_category3">Giá</button></label></div>
+          <div class="filter_div"><input type="checkbox" class="css-checkbox" ctl="filter_category4"/><label class="css_label"><button type="button" onclick="FilterBy(this.innerText)" class="filter_category_button" data-toggle="modal" data-target="#filter_category4">Hệ điều hành</button></label></div>
+          <div class="filter_div"><input type="checkbox" class="css-checkbox" ctl="filter_category5"/><label class="css_label"><button type="button" onclick="FilterBy(this.innerText)" class="filter_category_button" data-toggle="modal" data-target="#filter_category5">Màn hình</button></label></div>
+          <div class="filter_div"><input type="checkbox" class="css-checkbox" ctl="filter_category6"/><label class="css_label"><button type="button" onclick="FilterBy(this.innerText)" class="filter_category_button" data-toggle="modal" data-target="#filter_category6">Bộ nhớ trong</button></label></div>
+          <div class="filter_div"><input type="checkbox" class="css-checkbox" ctl="filter_category7"/><label class="css_label"><button type="button" onclick="FilterBy(this.innerText)" class="filter_category_button" data-toggle="modal" data-target="#filter_category7">Kết nối</button></label></div>
+        </div>
+        <div class="modal-footer" style="text-align:center">
+          <button type="button" class="btn btn-default mb-submit" data-dismiss="modal">Hoàn tất</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                    <?php require_once 'Modules/footer.php'; ?>
+  <script type="text/javascript">
+    function FilterBy(value)
+    {
+      $("[id^=filter_category] .modal-title").html("Lọc bởi: " + value);
+    }
+  </script>
+
+  
+  <div id="filter_category1" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="margin:0px">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close inner-cat" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+                      <div class="filter_div">
+              <input  type="checkbox" name="checkbox_device_type[]" id="checkbox_filter_1" value="1"
+                class="css-checkbox"><label for="checkbox_filter_1" class="css-label-right2">Smartphone chính hãng</label>
+            </div>
+                      <div class="filter_div">
+              <input  type="checkbox" name="checkbox_device_type[]" id="checkbox_filter_2" value="9"
+                class="css-checkbox"><label for="checkbox_filter_2" class="css-label-right2">Khuyến mại Smartphone</label>
+            </div>
+                      <div class="filter_div">
+              <input  type="checkbox" name="checkbox_device_type[]" id="checkbox_filter_3" value="13"
+                class="css-checkbox"><label for="checkbox_filter_3" class="css-label-right2">Điện thoại Viettel</label>
+            </div>
+                      <div class="filter_div">
+              <input  type="checkbox" name="checkbox_device_type[]" id="checkbox_filter_4" value="15"
+                class="css-checkbox"><label for="checkbox_filter_4" class="css-label-right2">Tablet chính hãng</label>
+            </div>
+                      <div class="filter_div">
+              <input  type="checkbox" name="checkbox_device_type[]" id="checkbox_filter_5" value="18"
+                class="css-checkbox"><label for="checkbox_filter_5" class="css-label-right2">Wifi 4G</label>
+            </div>
+                      <div class="filter_div">
+              <input  type="checkbox" name="checkbox_device_type[]" id="checkbox_filter_6" value="37"
+                class="css-checkbox"><label for="checkbox_filter_6" class="css-label-right2">Điện thoại cơ bản</label>
+            </div>
+                  </div>
+        <div class="modal-footer" style="text-align:center">
+          <button type="button" class="btn btn-default inner-cat" data-dismiss="modal">Hoàn tất</button>
+          <button type="button" class="btn btn-default inner-cat" data-dismiss="modal">Hủy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="filter_category2" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="margin:0px">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close inner-cat" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_brand[]" id="checkbox_filter_7" value="2"
+                class="css-checkbox"><label for="checkbox_filter_7" class="css-label-right2">Samsung</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_brand[]" id="checkbox_filter_8" value="3"
+                class="css-checkbox"><label for="checkbox_filter_8" class="css-label-right2">HTC</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_brand[]" id="checkbox_filter_9" value="4"
+                class="css-checkbox"><label for="checkbox_filter_9" class="css-label-right2">Sony</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_brand[]" id="checkbox_filter_10" value="9"
+                class="css-checkbox"><label for="checkbox_filter_10" class="css-label-right2">Microsoft</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_brand[]" id="checkbox_filter_11" value="13"
+                class="css-checkbox"><label for="checkbox_filter_11" class="css-label-right2">Apple</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_brand[]" id="checkbox_filter_12" value="25"
+                class="css-checkbox"><label for="checkbox_filter_12" class="css-label-right2">Oppo</label>
+            </div>
+                  </div>
+        <div class="modal-footer" style="text-align:center">
+          <button type="button" class="btn btn-default inner-cat" data-dismiss="modal">Hoàn tất</button>
+          <button type="button" class="btn btn-default inner-cat" data-dismiss="modal">Hủy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="filter_category3" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="margin:0px">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close inner-cat" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_price[]" id="checkbox_filter_13" value="0-500000" class="css-checkbox">
+              <label for="checkbox_filter_13" class="css-label-right2">0 đ -> 500.000 đ</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_price[]" id="checkbox_filter_14" value="500000-1000000" class="css-checkbox">
+              <label for="checkbox_filter_14" class="css-label-right2">500.000 đ -> 1.000.000 đ</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_price[]" id="checkbox_filter_15" value="1000000-3000000" class="css-checkbox">
+              <label for="checkbox_filter_15" class="css-label-right2">1.000.000 đ -> 3.000.000 đ</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_price[]" id="checkbox_filter_16" value="3000000-5000000" class="css-checkbox">
+              <label for="checkbox_filter_16" class="css-label-right2">3.000.000 đ -> 5.000.000 đ</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_price[]" id="checkbox_filter_17" value="5000000" class="css-checkbox">
+              <label for="checkbox_filter_17" class="css-label-right2">trên 5.000.000 đ</label>
+            </div>
+                  </div>
+        <div class="modal-footer" style="text-align:center">
+          <button type="button" class="btn btn-default inner-cat" data-dismiss="modal">Hoàn tất</button>
+          <button type="button" class="btn btn-default inner-cat" data-dismiss="modal">Hủy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="filter_category4" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="margin:0px">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close inner-cat" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_os[]" id="checkbox_filter_18" value="1"
+                     class="css-checkbox"><label for="checkbox_filter_18" class="css-label-right2">iOS</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_os[]" id="checkbox_filter_19" value="2"
+                     class="css-checkbox"><label for="checkbox_filter_19" class="css-label-right2">Android</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_os[]" id="checkbox_filter_20" value="5"
+                     class="css-checkbox"><label for="checkbox_filter_20" class="css-label-right2">Window Phone</label>
+            </div>
+                  </div>
+        <div class="modal-footer" style="text-align:center">
+          <button type="button" class="btn btn-default inner-cat" data-dismiss="modal">Hoàn tất</button>
+          <button type="button" class="btn btn-default inner-cat" data-dismiss="modal">Hủy</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="filter_category5" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="margin:0px">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close inner-cat" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_screen_type[]" id="checkbox_filter_21" value="0-4"
+                     class="css-checkbox"><label for="checkbox_filter_21" class="css-label-right2">Dưới 4 inches</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_screen_type[]" id="checkbox_filter_22" value="4-5"
+                     class="css-checkbox"><label for="checkbox_filter_22" class="css-label-right2">Từ 4 tới 5 inches</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_screen_type[]" id="checkbox_filter_23" value="5-6"
+                     class="css-checkbox"><label for="checkbox_filter_23" class="css-label-right2">Từ 5 tới 6 inches</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_screen_type[]" id="checkbox_filter_24" value="6-9"
+                     class="css-checkbox"><label for="checkbox_filter_24" class="css-label-right2">Từ 6 tới 9 inches</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_screen_type[]" id="checkbox_filter_25" value="9"
+                     class="css-checkbox"><label for="checkbox_filter_25" class="css-label-right2">Trên 9 inches</label>
+            </div>
+                  </div>
+        <div class="modal-footer" style="text-align:center">
+          <button type="button" class="btn btn-default inner-cat" data-dismiss="modal">Hoàn tất</button>
+          <button type="button" class="btn btn-default inner-cat" data-dismiss="modal">Hủy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="filter_category6" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="margin:0px">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close inner-cat" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_storage_type[]" id="checkbox_filter_26" value="0-8"
+                     class="css-checkbox"><label for="checkbox_filter_26" class="css-label-right2">Dưới 8Gb</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_storage_type[]" id="checkbox_filter_27" value="8-16"
+                     class="css-checkbox"><label for="checkbox_filter_27" class="css-label-right2">từ 8Gb tới 16Gb</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_storage_type[]" id="checkbox_filter_28" value="16-32"
+                     class="css-checkbox"><label for="checkbox_filter_28" class="css-label-right2">từ 16Gb tới 32Gb</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_storage_type[]" id="checkbox_filter_29" value="32-64"
+                     class="css-checkbox"><label for="checkbox_filter_29" class="css-label-right2">từ 32Gb tới 64Gb</label>
+            </div>
+                      <div class="filter_div">
+              <input type="checkbox" name="checkbox_storage_type[]" id="checkbox_filter_30" value="64"
+                     class="css-checkbox"><label for="checkbox_filter_30" class="css-label-right2">trên 64Gb</label>
+            </div>
+                  </div>
+        <div class="modal-footer" style="text-align:center">
+          <button type="button" class="btn btn-default inner-cat" data-dismiss="modal">Hoàn tất</button>
+          <button type="button" class="btn btn-default inner-cat" data-dismiss="modal">Hủy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  <div id="filter_category7" class="modal fade" role="dialog">-->
+<!--    <div class="modal-dialog" style="margin:0px">-->
+<!--      <div class="modal-content">-->
+<!--        <div class="modal-header">-->
+<!--          <button type="button" class="close inner-cat" data-dismiss="modal">&times;</button>-->
+<!--          <h4 class="modal-title"></h4>-->
+<!--        </div>-->
+<!--        <div class="modal-body">-->
+<!--          --><!--            <div class="filter_div">-->
+<!--              <input type="checkbox" name="checkbox_network_type[]" id="checkbox_filter_--><!--" value="--><!--"-->
+<!--                     class="css-checkbox"><label for="checkbox_filter_--><!--" class="css-label-right2">--><!--</label>-->
+<!--            </div>-->
+<!--          --><!--        </div>-->
+<!--        <div class="modal-footer" style="text-align:center">-->
+<!--          <button type="button" class="btn btn-default inner-cat" data-dismiss="modal">Hoàn tất</button>-->
+<!--          <button type="button" class="btn btn-default inner-cat" data-dismiss="modal">Hủy</button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+  <div id="sort" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="margin:0px">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sắp xếp theo</h4>
+        </div>
+        <div class="modal-body">
+                      <div class="filter_div">
+              <input type="radio" name="checkbox_sort" id="checkbox_sort_31" value="1"
+                     class="css-checkbox"><label for="checkbox_sort_31">Giá tăng dần</label>
+            </div>
+                      <div class="filter_div">
+              <input type="radio" name="checkbox_sort" id="checkbox_sort_32" value="2"
+                     class="css-checkbox"><label for="checkbox_sort_32">Giá giảm dần</label>
+            </div>
+                  </div>
+        <div class="modal-footer" style="text-align:center">
+          <button type="button" class="btn btn-default  mb-submit" data-dismiss="modal">Hoàn tất</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+</section>
+
+<script>
+  $('.btn-default.inner-cat').on('click', function() {
+    var checked = $(this).parent().siblings('.modal-body').find('input[type=checkbox]:checked');
+    var id = $(this).parents('[id^=filter_category]').get(0).id;
+    if(checked.length <= 0) {
+      $('#filter [ctl="'+id+'"]').attr('checked', false);
+    } else {
+      $('#filter [ctl="'+id+'"]').attr('checked', true);
+    }
+  });
+
+  $('.close.inner-cat').on('click', function() {
+    var checked = $(this).parent().siblings('.modal-body').find('input[type=checkbox]:checked');
+    var id = $(this).parents('[id^=filter_category]').get(0).id;
+    if(checked.length <= 0) {
+      $('#filter [ctl="'+id+'"]').attr('checked', false);
+    } else {
+      $('#filter [ctl="'+id+'"]').attr('checked', true);
+    }
+  });
+
+  $('.mb-submit').on('click', function () {
+    $('#formMobileFilterDevice').submit();
+  });
+
+  $('#formMobileFilterDevice').on('submit', function (e) {
+    e.preventDefault();
+    var obj = $(this);
+    var listDevice = $('#filterDeviceDisplay');
+    listDevice.css("opacity", "0.7");
+    var countInTitle = $('#titleDisplay span');
+    $('#page-num').remove();
+    var page = $('.numb-paging.clicked').attr('page');
+    if(page != null) {
+      $(this).append('<input type="hidden" id="page-num" name="page-num" value="' + page + '"/>');
+    }
+
+    $.ajax({
+      url: obj.attr('action'),
+      type: obj.attr('method'),
+      cache: false,
+      data: obj.serialize(),
+      success: function (result) {
+//        var data = JSON.parse(result);
+//        listDevice.html(data.template);
+//        title.html(data.title);
+
+        listDevice.html(result);
+        countInTitle.html(listDevice.find("#countTotal").html());
+
+        listDevice.css("opacity", "1");
+      },
+      error: function (request, status, err) {
+        listDevice.html('<h4>Không có dữ liệu!!!!</h4>')
+        listDevice.css("opacity", "1");
+      }
+    });
+  });
+</script>
+<section class="section-61" style="background-color:#f3f3f3">
+  <div class="container">
+    <div id="titleDisplay">
+      <div class="title-section">
+  Điện thoại (<span>58</span>)
+</div>    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3 padding-horizontal-5">
+
+  <div id="ul-dropdown-menu-left" class="ul-dropdown-menu-left" style="display: block;">
+    <form id="formFilterDevice" action="/ajax/danh-sach-thiet-bi-loc" method="post">
+      <div class="panel-group" id="" role="tablist" aria-multiselectable="true">
+
+      
+      <div class="panel panel-menu-left">
+        <div class="panel-heading" role="tab" id="heading1">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="" href="#collapse1" aria-expanded="true" aria-controls="collapse1" class="">
+              Loại sản phẩm
+              <i class="fa pull-right">+</i>
+            </a>
+          </h4>
+        </div>
+
+        <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1" aria-expanded="true">
+          <div class="panel-body">
+                          <div class="item-checkbox">
+                <input  type="checkbox" name="checkbox_device_type[]" id="checkbox1" value="1" class="item-checkbox1">
+                <label for="checkbox1" class="css-label1">Smartphone chính hãng</label>
+              </div>
+                          <div class="item-checkbox">
+                <input  type="checkbox" name="checkbox_device_type[]" id="checkbox2" value="9" class="item-checkbox1">
+                <label for="checkbox2" class="css-label1">Khuyến mại Smartphone</label>
+              </div>
+                          <div class="item-checkbox">
+                <input  type="checkbox" name="checkbox_device_type[]" id="checkbox3" value="13" class="item-checkbox1">
+                <label for="checkbox3" class="css-label1">Điện thoại Viettel</label>
+              </div>
+                          <div class="item-checkbox">
+                <input  type="checkbox" name="checkbox_device_type[]" id="checkbox4" value="15" class="item-checkbox1">
+                <label for="checkbox4" class="css-label1">Tablet chính hãng</label>
+              </div>
+                          <div class="item-checkbox">
+                <input  type="checkbox" name="checkbox_device_type[]" id="checkbox5" value="18" class="item-checkbox1">
+                <label for="checkbox5" class="css-label1">Wifi 4G</label>
+              </div>
+                          <div class="item-checkbox">
+                <input  type="checkbox" name="checkbox_device_type[]" id="checkbox6" value="37" class="item-checkbox1">
+                <label for="checkbox6" class="css-label1">Điện thoại cơ bản</label>
+              </div>
+                      </div>
+        </div>
+
+      </div>
+      <div class="panel panel-menu-left">
+        <div class="panel-heading" role="tab" id="heading2">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="" href="#collapse2" aria-expanded="true" aria-controls="collapse2" class="">
+              Thương hiệu
+              <i class="fa pull-right">+</i>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2" aria-expanded="true">
+          <div class="panel-body">
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_brand[]" id="checkbox7" value="2" class="item-checkbox1"><label for="checkbox7" class="css-label1">Samsung</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_brand[]" id="checkbox8" value="3" class="item-checkbox1"><label for="checkbox8" class="css-label1">HTC</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_brand[]" id="checkbox9" value="4" class="item-checkbox1"><label for="checkbox9" class="css-label1">Sony</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_brand[]" id="checkbox10" value="9" class="item-checkbox1"><label for="checkbox10" class="css-label1">Microsoft</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_brand[]" id="checkbox11" value="13" class="item-checkbox1"><label for="checkbox11" class="css-label1">Apple</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_brand[]" id="checkbox12" value="25" class="item-checkbox1"><label for="checkbox12" class="css-label1">Oppo</label>
+              </div>
+                      </div>
+        </div>
+      </div>
+      <div class="panel panel-menu-left">
+        <div class="panel-heading" role="tab" id="heading3">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="" href="#collapse3" aria-expanded="true" aria-controls="collapse3" class="">
+              Khoảng giá (đồng)
+              <i class="fa pull-right">+</i>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading3" aria-expanded="true">
+          <div class="panel-body">
+
+            <div class="slider-range" id="slider-range"></div>
+            <div class="text-range">
+              <input type="text" id="amount" name="price-range" readonly style="border:0; color:#f6931f; font-weight:bold;">
+              <input type="hidden" id="amount_field" name="price-range-raw">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-menu-left">
+        <div class="panel-heading" role="tab" id="heading4">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              Hệ điều hành
+              <i class="fa pull-right">+</i>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading4">
+          <div class="panel-body">
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_os[]" id="checkbox13" value="1" class="item-checkbox1"><label for="checkbox13" class="css-label1">iOS</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_os[]" id="checkbox14" value="2" class="item-checkbox1"><label for="checkbox14" class="css-label1">Android</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_os[]" id="checkbox15" value="5" class="item-checkbox1"><label for="checkbox15" class="css-label1">Window Phone</label>
+              </div>
+                      </div>
+        </div>
+      </div>
+      <div class="panel panel-menu-left">
+        <div class="panel-heading" role="tab" id="heading5">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+              Màn hình
+              <i class="fa pull-right">+</i>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse5" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading5">
+          <div class="panel-body">
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_screen_type[]" id="checkbox16" value="0-4" class="item-checkbox1"><label for="checkbox16" class="css-label1">Dưới 4 inches</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_screen_type[]" id="checkbox17" value="4-5" class="item-checkbox1"><label for="checkbox17" class="css-label1">Từ 4 tới 5 inches</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_screen_type[]" id="checkbox18" value="5-6" class="item-checkbox1"><label for="checkbox18" class="css-label1">Từ 5 tới 6 inches</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_screen_type[]" id="checkbox19" value="6-9" class="item-checkbox1"><label for="checkbox19" class="css-label1">Từ 6 tới 9 inches</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_screen_type[]" id="checkbox20" value="9" class="item-checkbox1"><label for="checkbox20" class="css-label1">Trên 9 inches</label>
+              </div>
+                      </div>
+        </div>
+      </div>
+      <div class="panel panel-menu-left">
+        <div class="panel-heading" role="tab" id="heading6">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+              Bộ nhớ trong
+              <i class="fa pull-right">+</i>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse6" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading6">
+          <div class="panel-body">
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_storage_type[]" id="checkbox21" value="0-8" class="item-checkbox1"><label for="checkbox21" class="css-label1">Dưới 8Gb</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_storage_type[]" id="checkbox22" value="8-16" class="item-checkbox1"><label for="checkbox22" class="css-label1">từ 8Gb tới 16Gb</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_storage_type[]" id="checkbox23" value="16-32" class="item-checkbox1"><label for="checkbox23" class="css-label1">từ 16Gb tới 32Gb</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_storage_type[]" id="checkbox24" value="32-64" class="item-checkbox1"><label for="checkbox24" class="css-label1">từ 32Gb tới 64Gb</label>
+              </div>
+                          <div class="item-checkbox">
+                <input type="checkbox" name="checkbox_storage_type[]" id="checkbox25" value="64" class="item-checkbox1"><label for="checkbox25" class="css-label1">trên 64Gb</label>
+              </div>
+                      </div>
+        </div>
+      </div>
+
+<!--      <div class="panel panel-menu-left">-->
+<!--        <div class="panel-heading" role="tab" id="heading7">-->
+<!--          <h4 class="panel-title">-->
+<!--            <a class="collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapse7" aria-expanded="false" aria-controls="collapse7">-->
+<!--              Kết nối-->
+<!--              <i class="fa pull-right">+</i>-->
+<!--            </a>-->
+<!--          </h4>-->
+<!--        </div>-->
+<!--        <div id="collapse7" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading7">-->
+<!--          <div class="panel-body">-->
+<!--            <div class="panel-body">-->
+<!--              --><!--                <div class="item-checkbox">-->
+<!--                  <input type="checkbox" name="checkbox_network_type[]" id="checkbox--><!--" value="--><!--" class="item-checkbox1"><label for="checkbox--><!--" class="css-label1">--><!--</label>-->
+<!--                </div>-->
+<!--              --><!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+    </div>
+        </form>
+  </div>
+  <input id="filterValue" type="hidden" value="">
+</div>
+
+<script>
+//  $(document).ready(function () {
+    $('.item-checkbox1').on('change', function () {
+      $('#formFilterDevice').submit();
+    });
+
+    $('#amount').on('change', function () {
+      $('#formFilterDevice').submit();
+    });
+
+    $('#formFilterDevice').on('submit', function (e) {
+      e.preventDefault();
+      var obj = $(this);
+      var countInTitle = $('#titleDisplay span');
+      $('#page-num').remove();
+      var pageClicked = $('.numb-paging.clicked');
+      var listDevice = $('#filterDeviceDisplay');
+      var page = pageClicked.attr('page');
+      if(page != null) {
+        listDevice = pageClicked.parents('.page-container');
+        $(this).append('<input type="hidden" id="is-promotion" name="is-promotion" value="' + pageClicked.attr('is-promotion') + '"/>');
+        $(this).append('<input type="hidden" id="page-num" name="page-num" value="' + page + '"/>');
+      }
+      listDevice.css("opacity", "0.7");
+
+      $.ajax({
+        url: obj.attr('action'),
+        type: obj.attr('method'),
+        cache: false,
+        data: obj.serialize(),
+        success: function (result) {
+//          var data = JSON.parse(result);
+//          listDevice.html(data.template);
+//          title.html(data.title);
+          listDevice.html(result);
+          countInTitle.html(listDevice.find("#countTotal").html());
+          listDevice.css("opacity", "1");
+        },
+        error: function (request, status, err) {
+          listDevice.html('<h4>Không có dữ liệu.</h4>');
+          listDevice.css("opacity", "1");
+        }
+      });
+    });
+//  }
+</script>    <div id="filterDeviceDisplay">
+      <!--<div class="page-container">-->
+<!--  --><!--</div>-->
+<div class="page-container">
+    <div id="countTotal"  style="display: none">58</div>
+  <div class="col-xs-12 col-sm-9 col-md-9 padding-horizontal-5">
+    <div class="row">
+<!--      <div class="col-xs-12 col-sm-12 col-md-12 col-xs-12">-->
+<!--        <div id="titleDisplay">-->
+<!--          --><!--          <hr/>-->
+<!--        </div>-->
+<!--      </div>-->
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-xs-4 mobile_half_width">
+          <a href="/chi-tiet-thiet-bi/samsung-galaxy-j2-pro-khuyen-mai-hoa-mang-tra-sau">
+            <div class="item-01">
+              <div class="images">
+                <img src="https://shop.viettel.vn/uploads/images/device/2018/05/03/04cdc7c99bd64fa4fe0fba4dda7395a728201743.jpg" alt="Samsung Galaxy J2 Pro (KM Hòa Mạng Trả Sau)">
+                <div class="des">
+                                      Cấu hình:<br />
+                                                                                  • Màn hình 5 inches. Super AMOLED<br />
+                                                              • Hệ điều hành: Android 7.1<br />
+                                                      </div>
+              </div>
+              <div class="content-item">
+                <div class="dienthoai_title center-text">
+                  Samsung Galaxy J2 Pro (KM Hòa Mạng Trả Sau)                </div>
+                <div class="dienthoai_price text2 center-text">
+                                    <div>1.990.000 đồng</div>
+                                      <div><span style="text-decoration:line-through">3.300.000 đồng</span></div>
+                                  </div>
+                <div class="text-center">
+                  <a href="/chi-tiet-thiet-bi/samsung-galaxy-j2-pro-khuyen-mai-hoa-mang-tra-sau" class="xem_button">Xem</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="check-item-1">
+            <input type="checkbox" name="checkbox_sosanh1"
+              id="checkbox_sosanh1" class="css-checkbox">
+            <label for="checkbox_sosanh1" class="css-label-right2">chọn để so sánh</label>
+            <div class="compare-att"
+              os_name="Android 7.1" front_camera="8MP" main_camera="5MP" resolution="Chưa cập nhật" screen_size="5 inches. Super AMOLED" system_chip="Chưa cập nhật" system_memory="Chưa cập nhật" battery="2600mAh" ></div>
+          </div>
+        </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-xs-4 mobile_half_width">
+          <a href="/chi-tiet-thiet-bi/samsung-galaxy-j2-pro-khuyen-mai">
+            <div class="item-01">
+              <div class="images">
+                <img src="https://shop.viettel.vn/uploads/images/device/2018/05/03/df3abdb1f47c291b37e6d06723e4abcbca4c7538.jpg" alt="Samsung Galaxy J2 Pro (Khuyến mại)">
+                <div class="des">
+                                      Cấu hình:<br />
+                                                                                  • Màn hình 5 inches. Super AMOLED<br />
+                                                              • Hệ điều hành: Android 7.1<br />
+                                                      </div>
+              </div>
+              <div class="content-item">
+                <div class="dienthoai_title center-text">
+                  Samsung Galaxy J2 Pro (Khuyến mại)                </div>
+                <div class="dienthoai_price text2 center-text">
+                                    <div>2.810.000 đồng</div>
+                                      <div><span style="text-decoration:line-through">3.300.000 đồng</span></div>
+                                  </div>
+                <div class="text-center">
+                  <a href="/chi-tiet-thiet-bi/samsung-galaxy-j2-pro-khuyen-mai" class="xem_button">Xem</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="check-item-1">
+            <input type="checkbox" name="checkbox_sosanh2"
+              id="checkbox_sosanh2" class="css-checkbox">
+            <label for="checkbox_sosanh2" class="css-label-right2">chọn để so sánh</label>
+            <div class="compare-att"
+              os_name="Android 7.1" front_camera="8MP" main_camera="5MP" resolution="Chưa cập nhật" screen_size="5 inches. Super AMOLED" system_chip="Chưa cập nhật" system_memory="Chưa cập nhật" battery="2600mAh" ></div>
+          </div>
+        </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-xs-4 mobile_half_width">
+          <a href="/chi-tiet-thiet-bi/samsung-galaxy-j2-pro">
+            <div class="item-01">
+              <div class="images">
+                <img src="https://shop.viettel.vn/uploads/images/device/2018/05/03/1e98b36f3c9674aba44b0be8b7a50cf916b90655.jpg" alt="Samsung Galaxy J2 Pro">
+                <div class="des">
+                                      Cấu hình:<br />
+                                                                                  • Màn hình 5 inches. Super AMOLED<br />
+                                                              • Hệ điều hành: Android 7.1<br />
+                                                      </div>
+              </div>
+              <div class="content-item">
+                <div class="dienthoai_title center-text">
+                  Samsung Galaxy J2 Pro                </div>
+                <div class="dienthoai_price text2 center-text">
+                                    <div>3.300.000 đồng</div>
+                                  </div>
+                <div class="text-center">
+                  <a href="/chi-tiet-thiet-bi/samsung-galaxy-j2-pro" class="xem_button">Xem</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="check-item-1">
+            <input type="checkbox" name="checkbox_sosanh3"
+              id="checkbox_sosanh3" class="css-checkbox">
+            <label for="checkbox_sosanh3" class="css-label-right2">chọn để so sánh</label>
+            <div class="compare-att"
+              os_name="Android 7.1" front_camera="8MP" main_camera="5MP" resolution="Chưa cập nhật" screen_size="5 inches. Super AMOLED" system_chip="Chưa cập nhật" system_memory="Chưa cập nhật" battery="2600mAh" ></div>
+          </div>
+        </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-xs-4 mobile_half_width">
+          <a href="/chi-tiet-thiet-bi/v6216">
+            <div class="item-01">
+              <div class="images">
+                <img src="https://shop.viettel.vn/uploads/images/device/2018/01/12/68b9033259df938521f3a2601bbb06b1ef540826.png" alt="Điện thoại người già V6216">
+                <div class="des">
+                                      Cấu hình:<br />
+                                                                                  • Màn hình 1.77<br />
+                                                                          </div>
+              </div>
+              <div class="content-item">
+                <div class="dienthoai_title center-text">
+                  Điện thoại người già V6216                </div>
+                <div class="dienthoai_price text2 center-text">
+                                    <div>470.000 đồng</div>
+                                  </div>
+                <div class="text-center">
+                  <a href="/chi-tiet-thiet-bi/v6216" class="xem_button">Xem</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="check-item-1">
+            <input type="checkbox" name="checkbox_sosanh4"
+              id="checkbox_sosanh4" class="css-checkbox">
+            <label for="checkbox_sosanh4" class="css-label-right2">chọn để so sánh</label>
+            <div class="compare-att"
+              os_name="Chưa cập nhật" front_camera="Chưa cập nhật" main_camera="VGA (0.3 MP)" resolution="128 x 160 pixels" screen_size="1.77" system_chip="Chưa cập nhật" system_memory="Chưa cập nhật" battery="Li-Ion, 800 mAh" ></div>
+          </div>
+        </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-xs-4 mobile_half_width">
+          <a href="/chi-tiet-thiet-bi/wifi-router-4g-d6608">
+            <div class="item-01">
+              <div class="images">
+                <img src="https://shop.viettel.vn/uploads/images/device/2017/12/21/2cf2188a88f8912db6c86900fa7d507ce27256c0.jpg" alt="Wifi Router 4G D6608">
+                <div class="des">
+                                      Cấu hình:<br />
+                      • Đang cập nhật
+                                  </div>
+              </div>
+              <div class="content-item">
+                <div class="dienthoai_title center-text">
+                  Wifi Router 4G D6608                </div>
+                <div class="dienthoai_price text2 center-text">
+                                    <div>950.000 đồng</div>
+                                  </div>
+                <div class="text-center">
+                  <a href="/chi-tiet-thiet-bi/wifi-router-4g-d6608" class="xem_button">Xem</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="check-item-1">
+            <input type="checkbox" name="checkbox_sosanh5"
+              id="checkbox_sosanh5" class="css-checkbox">
+            <label for="checkbox_sosanh5" class="css-label-right2">chọn để so sánh</label>
+            <div class="compare-att"
+              os_name="Chưa cập nhật" front_camera="Chưa cập nhật" main_camera="Chưa cập nhật" resolution="Chưa cập nhật" screen_size="Chưa cập nhật" system_chip="Chưa cập nhật" system_memory="Chưa cập nhật" battery="Không có pin" ></div>
+          </div>
+        </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-xs-4 mobile_half_width">
+          <a href="/chi-tiet-thiet-bi/samsung-galaxy-s8">
+            <div class="item-01">
+              <div class="images">
+                <img src="https://shop.viettel.vn/uploads/partner/device/2017/11/18/7e963c56cc51c7df75d8138645ef3a41.jpg" alt="Samsung Galaxy S8 (Supper combo 4G)">
+                <div class="des">
+                                      Cấu hình:<br />
+                                          • Vi xử lý: Exynos 8895 8 nhân 64-bit<br />
+                                                              • Bộ nhớ trong: 64GB + RAM 4GB LPDDR4<br />
+                                                              • Màn hình 5.8&amp;quot;, Super AMOLED, 2K (1440 x 2960 Pixels)<br />
+                                                              • Hệ điều hành: Android<br />
+                                                      </div>
+              </div>
+              <div class="content-item">
+                <div class="dienthoai_title center-text">
+                  Samsung Galaxy S8 (Supper combo 4G)                </div>
+                <div class="dienthoai_price text2 center-text">
+                                    <div>15.990.000 đồng</div>
+                                  </div>
+                <div class="text-center">
+                  <a href="/chi-tiet-thiet-bi/samsung-galaxy-s8" class="xem_button">Xem</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="check-item-1">
+            <input type="checkbox" name="checkbox_sosanh6"
+              id="checkbox_sosanh6" class="css-checkbox">
+            <label for="checkbox_sosanh6" class="css-label-right2">chọn để so sánh</label>
+            <div class="compare-att"
+              os_name="Android" front_camera="8MP AF (F1.7)" main_camera="Công nghệ Dual Pixel 12MP (F1.7)" resolution="Chưa cập nhật" screen_size="5.8&amp;quot;, Super AMOLED, 2K (1440 x 2960 Pixels)" system_chip="Exynos 8895 8 nhân 64-bit" system_memory="4GB LPDDR4" battery="Li-Ion, 3000 mAh" ></div>
+          </div>
+        </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-xs-4 mobile_half_width">
+          <a href="/chi-tiet-thiet-bi/samsung-galaxy-note-8">
+            <div class="item-01">
+              <div class="images">
+                <img src="https://shop.viettel.vn/uploads/partner/device/2017/11/18/257abbd848b08f1429336864cc2ec05b.jpg" alt="Samsung Galaxy Note 8">
+                <div class="des">
+                                      Cấu hình:<br />
+                                          • Vi xử lý: Exynos 8895 8 nhân 64-bit (4 nhân 2.3 GHz và 4 nhân 1.7 GHz)<br />
+                                                              • Bộ nhớ trong: 64 Gb + RAM 6 GB<br />
+                                                              • Màn hình Super AMOLED, 6.3&amp;quot;, 2K (1440 x 2960 Pixels)<br />
+                                                              • Hệ điều hành: Android<br />
+                                                      </div>
+              </div>
+              <div class="content-item">
+                <div class="dienthoai_title center-text">
+                  Samsung Galaxy Note 8                </div>
+                <div class="dienthoai_price text2 center-text">
+                                    <div>22.490.000 đồng</div>
+                                  </div>
+                <div class="text-center">
+                  <a href="/chi-tiet-thiet-bi/samsung-galaxy-note-8" class="xem_button">Xem</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="check-item-1">
+            <input type="checkbox" name="checkbox_sosanh7"
+              id="checkbox_sosanh7" class="css-checkbox">
+            <label for="checkbox_sosanh7" class="css-label-right2">chọn để so sánh</label>
+            <div class="compare-att"
+              os_name="Android" front_camera="2 camera 12 MP" main_camera="8 MP" resolution="Chưa cập nhật" screen_size="Super AMOLED, 6.3&amp;quot;, 2K (1440 x 2960 Pixels)" system_chip="Exynos 8895 8 nhân 64-bit (4 nhân 2.3 GHz và 4 nhân 1.7 GHz)" system_memory="6 GB" battery="Li-Ion 3300 mAh, Sạc pin nhanh, Sạc pin không dây, Siêu tiết kiệm pin" ></div>
+          </div>
+        </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-xs-4 mobile_half_width">
+          <a href="/chi-tiet-thiet-bi/iphone-8-64-gb">
+            <div class="item-01">
+              <div class="images">
+                <img src="https://shop.viettel.vn/uploads/images/device/2017/11/18/ff45bf7e318d341c6f1ae7b686f01dbb63552d7a.jpg" alt="iPhone 8 64 GB">
+                <div class="des">
+                                      Cấu hình:<br />
+                                          • Vi xử lý: Chip A11 Bionic 64, 6 nhân cùng bộ xử lý chuyển động M11<br />
+                                                              • Bộ nhớ trong: 64 GB + RAM 2 GB<br />
+                                                              • Màn hình 4.7&amp;quot; LED-backlit IPS LCD HD, 1334 x 750 pixel<br />
+                                                              • Hệ điều hành: iOS<br />
+                                                      </div>
+              </div>
+              <div class="content-item">
+                <div class="dienthoai_title center-text">
+                  iPhone 8 64 GB                </div>
+                <div class="dienthoai_price text2 center-text">
+                                    <div>19.990.000 đồng</div>
+                                      <div><span style="text-decoration:line-through">20.990.000 đồng</span></div>
+                                  </div>
+                <div class="text-center">
+                  <a href="/chi-tiet-thiet-bi/iphone-8-64-gb" class="xem_button">Xem</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="check-item-1">
+            <input type="checkbox" name="checkbox_sosanh8"
+              id="checkbox_sosanh8" class="css-checkbox">
+            <label for="checkbox_sosanh8" class="css-label-right2">chọn để so sánh</label>
+            <div class="compare-att"
+              os_name="iOS" front_camera="7 MP, khẩu độ F/2.2" main_camera="12.0 MP, khẩu độ F/1.8, chống rung quang học" resolution="Chưa cập nhật" screen_size="4.7&amp;quot; LED-backlit IPS LCD HD, 1334 x 750 pixel" system_chip="Chip A11 Bionic 64, 6 nhân cùng bộ xử lý chuyển động M11" system_memory="2 GB" battery="14h thoại, 12h dùng mạng, 13h Video, 40h nghe nhạc." ></div>
+          </div>
+        </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-xs-4 mobile_half_width">
+          <a href="/chi-tiet-thiet-bi/iphone-8-plus-64gb">
+            <div class="item-01">
+              <div class="images">
+                <img src="https://shop.viettel.vn/uploads/images/device/2017/11/18/58269bd048d583f131e1554f9896683cb9e2d638.jpg" alt="iPhone 8 Plus 64GB">
+                <div class="des">
+                                      Cấu hình:<br />
+                                          • Vi xử lý: Chip A11 Bionic 64, 6 nhân cùng bộ xử lý chuyển động M11<br />
+                                                              • Bộ nhớ trong: 64 GB + RAM 3 GB<br />
+                                                              • Màn hình 5.5&amp;quot; LED-backlit IPS LCD Full HD 1920 x 1080 pixel<br />
+                                                              • Hệ điều hành: Android<br />
+                                                      </div>
+              </div>
+              <div class="content-item">
+                <div class="dienthoai_title center-text">
+                  iPhone 8 Plus 64GB                </div>
+                <div class="dienthoai_price text2 center-text">
+                                    <div>22.990.000 đồng</div>
+                                      <div><span style="text-decoration:line-through">23.990.000 đồng</span></div>
+                                  </div>
+                <div class="text-center">
+                  <a href="/chi-tiet-thiet-bi/iphone-8-plus-64gb" class="xem_button">Xem</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="check-item-1">
+            <input type="checkbox" name="checkbox_sosanh9"
+              id="checkbox_sosanh9" class="css-checkbox">
+            <label for="checkbox_sosanh9" class="css-label-right2">chọn để so sánh</label>
+            <div class="compare-att"
+              os_name="Android" front_camera="7 MP, khẩu độ F/2.2" main_camera="Camera kép góc rộng 12.0 MP, có thể zoom quang học 2 lần, chống rung quang học" resolution="Chưa cập nhật" screen_size="5.5&amp;quot; LED-backlit IPS LCD Full HD 1920 x 1080 pixel" system_chip="Chip A11 Bionic 64, 6 nhân cùng bộ xử lý chuyển động M11" system_memory="3 GB" battery="21h thoại, 13h dùng mạng, 14h Video, 60h nghe nhạc." ></div>
+          </div>
+        </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-xs-4 mobile_half_width">
+          <a href="/chi-tiet-thiet-bi/viettel-v6216i">
+            <div class="item-01">
+              <div class="images">
+                <img src="https://shop.viettel.vn/uploads/images/device/2018/01/12/a2fc279ba7fd9c3e78cf5a9d9eedfed0cf5c8085.png" alt="Viettel V6216i">
+                <div class="des">
+                                      Cấu hình:<br />
+                                                                                  • Màn hình 1.77 inches<br />
+                                                                          </div>
+              </div>
+              <div class="content-item">
+                <div class="dienthoai_title center-text">
+                  Viettel V6216i                </div>
+                <div class="dienthoai_price text2 center-text">
+                                    <div>470.000 đồng</div>
+                                  </div>
+                <div class="text-center">
+                  <a href="/chi-tiet-thiet-bi/viettel-v6216i" class="xem_button">Xem</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="check-item-1">
+            <input type="checkbox" name="checkbox_sosanh10"
+              id="checkbox_sosanh10" class="css-checkbox">
+            <label for="checkbox_sosanh10" class="css-label-right2">chọn để so sánh</label>
+            <div class="compare-att"
+              os_name="Chưa cập nhật" front_camera="Không" main_camera="0.3 MP" resolution="128x160 pixels" screen_size="1.77 inches" system_chip="Chưa cập nhật" system_memory="Chưa cập nhật" battery="1000 mAh" ></div>
+          </div>
+        </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-xs-4 mobile_half_width">
+          <a href="/chi-tiet-thiet-bi/dien-thoai-v8801">
+            <div class="item-01">
+              <div class="images">
+                <img src="https://shop.viettel.vn/uploads/images/device/2017/04/20/f5b02c03f2b5c34c2a090e44ad3cdb450c338d30.png" alt="Điện thoại V8801">
+                <div class="des">
+                                      Cấu hình:<br />
+                                          • Vi xử lý: Quad core 1.0Ghz<br />
+                                                                                  • Màn hình 5 Inches LCD FWVGA IPS<br />
+                                                              • Hệ điều hành: Android 6.0<br />
+                                                      </div>
+              </div>
+              <div class="content-item">
+                <div class="dienthoai_title center-text">
+                  Điện thoại V8801                </div>
+                <div class="dienthoai_price text2 center-text">
+                                    <div>1.350.000 đồng</div>
+                                  </div>
+                <div class="text-center">
+                  <a href="/chi-tiet-thiet-bi/dien-thoai-v8801" class="xem_button">Xem</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="check-item-1">
+            <input type="checkbox" name="checkbox_sosanh11"
+              id="checkbox_sosanh11" class="css-checkbox">
+            <label for="checkbox_sosanh11" class="css-label-right2">chọn để so sánh</label>
+            <div class="compare-att"
+              os_name="Android 6.0" front_camera="2 MP" main_camera="5 MP" resolution="Chưa cập nhật" screen_size="5 Inches LCD FWVGA IPS" system_chip="Quad core 1.0Ghz" system_memory="Chưa cập nhật" battery="2000 mAh" ></div>
+          </div>
+        </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-xs-4 mobile_half_width">
+          <a href="/chi-tiet-thiet-bi/iphone-8-256-gb">
+            <div class="item-01">
+              <div class="images">
+                <img src="https://shop.viettel.vn/uploads/images/device/2017/11/18/7a8d569f172c4316ff29b0e9a59c8904c44b45a9.jpg" alt="iPhone 8 256 GB">
+                <div class="des">
+                                      Cấu hình:<br />
+                                          • Vi xử lý: Chip A11 Bionic 64, 6 nhân cùng bộ xử lý chuyển động M11<br />
+                                                              • Bộ nhớ trong: 256 GB + RAM 2 GB<br />
+                                                              • Màn hình 4.7&amp;quot; LED-backlit IPS LCD HD, 1334 x 750 pixel<br />
+                                                              • Hệ điều hành: iOS<br />
+                                                      </div>
+              </div>
+              <div class="content-item">
+                <div class="dienthoai_title center-text">
+                  iPhone 8 256 GB                </div>
+                <div class="dienthoai_price text2 center-text">
+                                    <div>22.790.000 đồng</div>
+                                      <div><span style="text-decoration:line-through">25.790.000 đồng</span></div>
+                                  </div>
+                <div class="text-center">
+                  <a href="/chi-tiet-thiet-bi/iphone-8-256-gb" class="xem_button">Xem</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="check-item-1">
+            <input type="checkbox" name="checkbox_sosanh12"
+              id="checkbox_sosanh12" class="css-checkbox">
+            <label for="checkbox_sosanh12" class="css-label-right2">chọn để so sánh</label>
+            <div class="compare-att"
+              os_name="iOS" front_camera="7 MP, khẩu độ F/2.2" main_camera="12.0 MP, khẩu độ F/1.8, chống rung quang học" resolution="Chưa cập nhật" screen_size="4.7&amp;quot; LED-backlit IPS LCD HD, 1334 x 750 pixel" system_chip="Chip A11 Bionic 64, 6 nhân cùng bộ xử lý chuyển động M11" system_memory="2 GB" battery="14h thoại, 12h dùng mạng, 13h Video, 40h nghe nhạc" ></div>
+          </div>
+        </div>
+      
+      <div class="clearfix"></div>
+        <div class="paging-bottom">
+    
+                  <a href="javascript:void(0)" class="numb-paging active" page="1">1</a>
+                        <a href="javascript:void(0)" class="numb-paging" page="2">2</a>
+                        <a href="javascript:void(0)" class="numb-paging" page="3">3</a>
+                        <a href="javascript:void(0)" class="numb-paging" page="4">4</a>
+                        <a href="javascript:void(0)" class="numb-paging" page="5">5</a>
+          
+          <a href="javascript:void(0)" class="numb-paging" page="2">Trang sau ></a>
+      </div>
+
+<script>
+  $('.numb-paging').not('.active').on('click', function () {
+    $(this).toggleClass('clicked');
+    if($('#mobileFilter').is(":visible")) {
+      $('#formMobileFilterDevice').submit();
+    } else {
+      $('#formFilterDevice').submit();
+    }
+  });
+</script>
+
+<!--<div class="paging-bottom">-->
+<!--  <a href="#" class="numb-paging active">1</a>-->
+<!--  <a href="#" class="numb-paging">2</a>-->
+<!--  <a href="#" class="numb-paging">3</a>-->
+<!--  <a href="#" class="numb-paging">4</a>-->
+<!--  <a href="#" class="numb-paging">5</a>-->
+<!--</div>-->
+          </div>
+  </div>
 
 
+<!--<span id="remaining-items---><!--" data-value="--><!--"></span>-->
+<!--<div id="load-more-here" class="center-text margin-vertical-30">-->
+<!--  --><!--      <div id="load-more-item" data-last-page="--><!--"-->
+<!--           data-per-page="--><!--" data-form-id="search-device-form" class="btn-secsimso">-->
+<!--        Xem thêm <span id="remaining-counter">(--><!--)</span> <i class="fa fa-chevron-circle-down"></i></div>-->
+<!--    --><!--</div>--></div>    </div>
+    
+<section id="compare2" class="section-25 wa-compare2-destop">
+  <div id="close-compare" class="close-small"><img src="https://shop.viettel.vn/img/close_small.png" alt="close"/></div>
+  <div class="line-section"></div>
+  <div class="container">
+    <div class="row">
 
+      <div class="col-md-12">
+        <div class="col-md-6 item-compare">
+
+          <div id="btn-sosanh2" class="btn-sosanh">So sánh sản phẩm  <i class="fa fa-chevron-circle-right"></i></div>
+          <div class="text4">Tính năng</div>
+                      <div class="text3">Hệ điều hành</div>
+                      <div class="text3">Camera trước</div>
+                      <div class="text3">Camera sau</div>
+                      <div class="text3">Độ phân giải</div>
+                      <div class="text3">Màn hình</div>
+                      <div class="text3">Vi xử lý</div>
+                      <div class="text3">Bộ nhớ trong</div>
+                      <div class="text3">PIN</div>
+                  </div>
+
+        <div class="col-md-3 item-compare item-compare-1">
+          <div class="images"><img src="https://shop.viettel.vn/img/sec25_img_1.png" alt="ảnh 1"/></div>
+          <div class="text1"></div>
+                      <div class="text2"></div>
+                      <div class="text2"></div>
+                      <div class="text2"></div>
+                      <div class="text2"></div>
+                      <div class="text2"></div>
+                      <div class="text2"></div>
+                      <div class="text2"></div>
+                      <div class="text2"></div>
+          
+        </div>
+        <div class="col-md-3 item-compare item-compare-2">
+          <div class="images"><img src="https://shop.viettel.vn/img/sec25_img_1.png" alt="ảnh 2"/></div>
+          <div class="text1"></div>
+                      <div class="text2"></div>
+                      <div class="text2"></div>
+                      <div class="text2"></div>
+                      <div class="text2"></div>
+                      <div class="text2"></div>
+                      <div class="text2"></div>
+                      <div class="text2"></div>
+                      <div class="text2"></div>
+          
+        </div>
+    </div>
+
+
+  </div>
+</section>    <div class="wa-compare2-mobile">
+  <section class="section-25" id="compare2-mobile">
+    <div class="close-small" id="close-compare-mobile"><img src="https://shop.viettel.vn/img/close_small.png" alt="close"></div>
+    <div class="line-section"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 item-compare-mobile">
+          <a class="btn-sosanh" id="btn-sosanh2-mobile" href="#modalCompareDevice" data-toggle="modal">So sánh <i class="fa fa-chevron-circle-right"></i></a>
+          <a class="text-compare-mobile" href="#"><span id="compare-counter">1</span> thiết bị được thêm <br>(Tối đa <span>2</span> thiết bị)</a>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="wa-compare2-destop">
+  <section id="compare2" class="section-25">
+    <div id="close-compare" class="close-small"><img src="https://shop.viettel.vn/img/close_small.png" alt="close"></div>
+    <div class="line-section"></div>
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-12">
+          <div class="col-md-6 item-compare">
+
+            <div id="btn-sosanh2" class="btn-sosanh">So sánh sản phẩm  <i class="fa fa-chevron-circle-right"></i></div>
+            <div class="text4">Tính năng</div>
+                          <div class="text3">Hệ điều hành</div>
+                          <div class="text3">Camera trước</div>
+                          <div class="text3">Camera sau</div>
+                          <div class="text3">Độ phân giải</div>
+                          <div class="text3">Màn hình</div>
+                          <div class="text3">Vi xử lý</div>
+                          <div class="text3">Bộ nhớ trong</div>
+                          <div class="text3">PIN</div>
+                      </div>
+
+          <div class="col-md-3 item-compare item-compare-first">
+            <div class="images"><img src="https://shop.viettel.vn/img/sec25_img_1.png" alt="ảnh 1"></div>
+            <div class="text1"></div>
+                          <div class="text2"></div>
+                          <div class="text2"></div>
+                          <div class="text2"></div>
+                          <div class="text2"></div>
+                          <div class="text2"></div>
+                          <div class="text2"></div>
+                          <div class="text2"></div>
+                          <div class="text2"></div>
+                      </div>
+          <div class="col-md-3 item-compare item-compare-second">
+            <div class="images"><img src="https://shop.viettel.vn/img/sec25_img_1.png" alt="ảnh 2"></div>
+            <div class="text1"></div>
+                          <div class="text2"></div>
+                          <div class="text2"></div>
+                          <div class="text2"></div>
+                          <div class="text2"></div>
+                          <div class="text2"></div>
+                          <div class="text2"></div>
+                          <div class="text2"></div>
+                          <div class="text2"></div>
+                      </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="modal fade" id="modalCompareDevice" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header popup_header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color:#ffffff">&times;</span>
+        </button>
+        <div class="fontclass_regular">So sánh sản phẩm</div>
+      </div>
+      <div class="modal-body" style="padding-left:30px;padding-right:30px">
+        <div class="row">
+          <div class="col-xs-12">
+            <table class="table-striped col-xs-12 table-compare">
+              <tr>
+                <td style="width: 50%"><h6><span id="title-compare-first"></span></h6></td>
+                <td style="width: 50%"><h6><span id="title-compare-second"></span></h6></td>
+              </tr>
+                              <tr>
+                  <td style="width: 50%"><b>Hệ điều hành</b><br/><span id="attr-device1-os_name"></span></td>
+                  <td style="width: 50%"><br/><span id="attr-device2-os_name"></span></td>
+                </tr>
+                              <tr>
+                  <td style="width: 50%"><b>Camera trước</b><br/><span id="attr-device1-front_camera"></span></td>
+                  <td style="width: 50%"><br/><span id="attr-device2-front_camera"></span></td>
+                </tr>
+                              <tr>
+                  <td style="width: 50%"><b>Camera sau</b><br/><span id="attr-device1-main_camera"></span></td>
+                  <td style="width: 50%"><br/><span id="attr-device2-main_camera"></span></td>
+                </tr>
+                              <tr>
+                  <td style="width: 50%"><b>Độ phân giải</b><br/><span id="attr-device1-resolution"></span></td>
+                  <td style="width: 50%"><br/><span id="attr-device2-resolution"></span></td>
+                </tr>
+                              <tr>
+                  <td style="width: 50%"><b>Màn hình</b><br/><span id="attr-device1-screen_size"></span></td>
+                  <td style="width: 50%"><br/><span id="attr-device2-screen_size"></span></td>
+                </tr>
+                              <tr>
+                  <td style="width: 50%"><b>Vi xử lý</b><br/><span id="attr-device1-system_chip"></span></td>
+                  <td style="width: 50%"><br/><span id="attr-device2-system_chip"></span></td>
+                </tr>
+                              <tr>
+                  <td style="width: 50%"><b>Bộ nhớ trong</b><br/><span id="attr-device1-system_memory"></span></td>
+                  <td style="width: 50%"><br/><span id="attr-device2-system_memory"></span></td>
+                </tr>
+                              <tr>
+                  <td style="width: 50%"><b>PIN</b><br/><span id="attr-device1-battery"></span></td>
+                  <td style="width: 50%"><br/><span id="attr-device2-battery"></span></td>
+                </tr>
+                          </table>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  </div>
+</section>
+
+<script>
+  $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      step: 1000000,
+      min: 0,
+      max: 30000000,
+      values: [ 0, 30000000 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( ui.values[ 0 ] + "đ - " + ui.values[ 1 ] + "đ");
+        $( "#amount_field" ).val(ui.values[ 0 ] + "-" + ui.values[ 1 ]);
+      }
+    });
+    $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) +
+    "đ - " + $( "#slider-range" ).slider( "values", 1 ) + "đ");
+    $( "#amount_field" ).val($( "#slider-range" ).slider( "values", 0 ) + "-" + $( "#slider-range" ).slider( "values", 1 ) );
+
+    $("#slider-range").slider().bind({
+      slidestop: function(event, ui) {
+        $('#formFilterDevice').submit();
+      }
+    });
+  } );
+</script>
+
+    <section class="section-20">
+        <div class="container">
+          <div class="row hide_on_small">
+            <div class="col-xs-4 col-sm-4 col-md-4 item-01">
+
+              <div class="images"><img src="https://shop.viettel.vn/img/sec_20_img_01.png" alt="giao hàng"></div>
+              <div class="title">Giao hàng nhanh</div>
+              <div class="clearfix"></div>
+              <div class="meta">Thời gian giao hàng:</div>
+              <div class="meta">  • Khu vực nội thành Hà Nội: 24h</div>
+              <div class="meta">  • Khu vực ngoại thành Hà Nội: 36h</div>
+              <div class="meta">  • Các khu vực tỉnh/thành phố còn lại: 4 - 5 ngày (không tính chủ nhật và ngày nghỉ lễ)</div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 item-01">
+              <div class="images"><img src="https://shop.viettel.vn/img/sec_20_img_02.png" alt="thanh toán"></div>
+              <div class="title">Thanh toán tiện</div>
+              <div class="clearfix"></div>
+              <div class="meta">Tùy chọn thanh toán tiền mặt, chuyển khoản, thanh toán qua thẻ hoặc Internet banking</div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 item-01">
+              <div class="images"><img src="https://shop.viettel.vn/img/sec_20_img_03.png" alt="mạng lưới"></div>
+              <div class="title">Mạng lưới rộng</div>
+              <div class="clearfix"></div>
+              <div class="meta">
+                Mạng lưới Viettel phủ khắp cả nước <br />
+                <a href="/cua-hang">Danh sách CHTT Viettel <i class="fa fa-chevron-circle-right"></i></a>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="row hide_on_large">
+                <div class="col-xs-4 col-sm-4 col-md-4 item-01" href="#tab-giaohang1" aria-controls="tab-giaohang1" role="tab" data-toggle="tab">
+
+                        <div class="images"><img src="https://shop.viettel.vn/img/sec_20_img_01.png" alt="giao hàng"></div>
+                        <div class="title">Giao hàng nhanh</div>
+                        <div class="clearfix"></div>
+                        <div class="meta">Thời gian giao hàng:</div>
+                        <div class="meta">  • Khu vực nội thành Hà Nội: 24h</div>
+                        <div class="meta">  • Khu vực ngoại thành Hà Nội: 36h</div>
+                        <div class="meta">  • Các khu vực tỉnh/thành phố còn lại: 4 - 5 ngày (không tính chủ nhật và ngày nghỉ lễ)</div>
+                        <div class="clearfix"></div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 item-01" href="#tab-giaohang2" aria-controls="tab-giaohang2" role="tab" data-toggle="tab">
+                        <div class="images"><img src="https://shop.viettel.vn/img/sec_20_img_02.png" alt="thanh toán"></div>
+                        <div class="title">Thanh toán tiện</div>
+                        <div class="clearfix"></div>
+                        <div class="meta">Tùy chọn thanh toán tiền mặt, chuyển khoản, thanh toán qua thẻ hoặc Internet banking</div>
+                        <div class="clearfix"></div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 item-01" href="#tab-giaohang3" aria-controls="tab-giaohang3" role="tab" data-toggle="tab">
+                        <div class="images"><img src="https://shop.viettel.vn/img/sec_20_img_03.png" alt="mạng lưới"></div>
+                        <div class="title">Mạng lưới rộng</div>
+                        <div class="clearfix"></div>
+                        <div class="meta">
+                            Mạng lưới Viettel phủ khắp cả nước <br />
+                            <a href="/cua-hang">Danh sách CHTT Viettel <i class="fa fa-chevron-circle-right"></i></a>
+                        </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane" id="tab-giaohang1">
+                      <div class="text">Thời gian giao hàng:<br/>
+                        • Khu vực nội thành Hà Nội: 24h<br/>
+                        • Khu vực ngoại thành Hà Nội: 36h<br/>
+                        • Các khu vực tỉnh/thành phố còn lại: 4 - 5 ngày (không tính chủ nhật và ngày nghỉ lễ)</div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab-giaohang2">
+                        <div class="text">Tùy chọn thanh toán tiền mặt, chuyển khoản, thanh toán qua thẻ hoặc Internet banking</div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab-giaohang3">
+                        <div class="text">
+                            Mạng lưới Viettel phủ khắp cả nước <br />
+                            <a href="/cua-hang">Danh sách CHTT Viettel <i class="fa fa-chevron-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
 
+            </div>
+        </div>
+    </section>
 
+    <section class="section-52">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-md-3">
+                    <div class="item-01">
+                        <div class="title">CÁCH THỨC THANH TOÁN</div>
+                        <div class="images"><img src="https://shop.viettel.vn/img/sec52_img_1.png" alt="master card"> <img src="https://shop.viettel.vn/img/sec52_img_2.png" alt="visa"> <img src="https://shop.viettel.vn/img/sec52_img_3.png" alt="bankplus"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <div class="item-01">
+                        <div class="title">DỊCH VỤ GIAO HÀNG</div>
+                        <div class="images"><img src="https://shop.viettel.vn/img/sec52_img_4.png" alt="viettel post"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                  <div class="item-01">
+                    <div class="title">ĐỐI TÁC</div>
+                    <div class="images"><a target="_blank" href="https://viettelstore.vn"><img src="https://shop.viettel.vn/img/logo_viettel_store.png" alt="viettel store"></a></div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <div class="item-01 no-border">
+                        <div class="title">CHỨNG NHẬN</div>
+                        <div class="images"><a target="_blank" href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=14535"><img src="https://shop.viettel.vn/img/sec52_img_5.png" alt="Đã thông báo bộ công thương"></a></div>
+                    </div>
+                </div>
+            </div>
 
         </div>
-    <?php require_once 'Modules/others/module2.php'; ?>
-    <script defer async type="text/javascript" src="https://cdn.nguyenkimmall.com/js/source/category.min.js?ver=4.4.2.201804063"></script>
-        
-    <?php require_once 'Modules/others/module5.php'; ?>
-<!--Script for Web Push Notification-->
-    
-<!--/Script for Web Push Notification-->
-            </body>
-    </html>
+    </section>
+    <section class="section-26">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3 item-01">
+                    <i class="fa fa-phone-square"></i> Hotline: 1800 8168
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer-dark">
+        		<div class="container padding-vertical-50">
+            <div class="row">
+
+<!--              -->                                  <div class="col-xs-12 col-sm-6 col-md-3 col-item-footer">
+                    <div class="title-footer"><a href="/xem-them-bai-viet/1">Giới thiệu</a></div>
+                    <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                          <div class="title-footer">Liên kết</div>
+                      <ul>
+                        <li class="item-list-social"><i class="fa fa-facebook-square"></i>
+                                                      <a target="_blank" href="https://facebook.com/profile.php?id=971440192970431">Facebook</a>
+                                                  </li>
+                        <!--              <li class="item-list-social"><i class="fa fa-twitter-square"></i> <a href="#">Theo dõi trên Twiter</a></li>-->
+                        <!--              <li class="item-list-social"><i class="fa fa-google-plus-square"></i> <a href="#">Theo dõi trên Google +</a></li>-->
+                        <!--              <li class="item-list-social"><i class="fa fa-youtube-square"></i> <a href="#">Theo dõi trên Youtube</a></li>-->
+                        <!--              <li class="item-list-social"><i class="fa fa-vimeo-square"></i> <a href="#">Theo dõi trên Vimeo</a></li>-->
+                      </ul>
+                      <div>
+                        <div class="fb-like" data-href="https://shop.viettel.vn" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+                        <div class="fb-share-button" data-href="https://shop.viettel.vn/thiet-bi" data-layout="button" data-size="small" data-mobile-iframe="true"></div>
+                      </div>
+                                      </div>
+                                  <div class="col-xs-12 col-sm-6 col-md-3 col-item-footer">
+                    <div class="title-footer"><a href="/xem-them-bai-viet/2">Tin tức</a></div>
+                    <ul>
+                                                                                                                      <li><a href="/chi-tiet-bai-viet/usb-3g-viettel">USB 3G Viettel</a></li>
+                                                                                                                                                  <li><a href="/chi-tiet-bai-viet/tu-va-n-mua-ma-y-ti-nh-ba-ng-cu-a-viettel">Tư vấn mua máy tính bảng của Viettel</a></li>
+                                                                                                                                                  <li><a href="/chi-tiet-bai-viet/gia-dien-thoai-viettel">Giá điện thoại Viettel</a></li>
+                                                                                                                                                  <li><a href="/chi-tiet-bai-viet/cuoc-song-thuan-tien-hon-khi-so-huu-dien-thoai-viettel-cam-ung">Cuộc sống thuận tiện hơn khi sở hữu điện thoại Viettel cảm ứng</a></li>
+                                                                                                                                                  <li><a href="/chi-tiet-bai-viet/co-ngay-dien-thoai-viettel-2-sim-2-song-voi-gia-vo-cung-mem">Có ngay điện thoại Viettel 2 sim 2 sóng với giá vô cùng &quot;mềm&quot;</a></li>
+                                                                                                                    </ul>
+                                      </div>
+                                  <div class="col-xs-12 col-sm-6 col-md-3 col-item-footer">
+                    <div class="title-footer"><a href="/xem-them-bai-viet/3">Sản phẩm</a></div>
+                    <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li><a href="/chi-tiet-bai-viet/wifi-router-4g-d6606-4g-quanh-ta-wifi-tha-ga">WiFi Router 4G D6606 – 4G quanh ta, wifi thả ga</a></li>
+                                                                                                                                                                                                                                                                                              <li><a href="/chi-tiet-bai-viet/galaxy-s8-plus-tuyet-pham-cong-nghe-vuot-ngoai-suc-tuong-tuong">Galaxy S8 Plus – tuyệt phẩm công nghệ vượt ngoài sức tưởng tượng</a></li>
+                                                                                                                                                  <li><a href="/chi-tiet-bai-viet/samsung-galaxy-s8-tuyet-tac-cong-nghe-voi-man-hinh-vo-cuc-infinity">Samsung Galaxy S8 – tuyệt tác công nghệ với màn hình vô cực Infinity</a></li>
+                                                                                                                                                  <li><a href="/chi-tiet-bai-viet/v8801-dien-thoai-smartphone-4g-sieu-re-cua-viettel">V8801- Điện thoại smartphone 4G siêu rẻ của Viettel</a></li>
+                                                                                                                                                  <li><a href="/chi-tiet-bai-viet/suc-hut-hoan-hao-den-tu-chiec-smartphone-tam-gia-6-trieu-dong">Sức hút &quot;hoàn hảo&quot; đến từ chiếc smartphone tầm giá 6 triệu đồng</a></li>
+                                                                                                                    </ul>
+                                      </div>
+                                  <div class="col-xs-12 col-sm-6 col-md-3 col-item-footer">
+                    <div class="title-footer"><a href="/xem-them-bai-viet/4">Hỗ trợ</a></div>
+                    <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li><a href="/chi-tiet-bai-viet/chinh-sach-bao-hanh-dien-thoai">Chính sách bảo hành điện thoại</a></li>
+                                                                                                                                                  <li><a href="/chi-tiet-bai-viet/huong-dan-mua-thiet-bi-tai-viettel-shop">Hướng dẫn mua hàng</a></li>
+                                                                                                                                                                                                                                                                                              <li><a href="/chi-tiet-bai-viet/huong-dan-mua-thiet-bi-tai-viettel-shop">Quy trình mua hàng</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                      </div>
+                <!--              --><!--                <div class="col-xs-12 col-sm-6 col-md-3 col-item-footer">-->
+<!--                  <div class="title-footer">Liên hệ</div>-->
+<!--                  <ul>-->
+<!--                    <li><a href="javascript:void(0);">Địa chỉ: --><!--</a></li>-->
+<!--                    <li><a href="javascript:void(0);">Điện thoại liên hệ: --><!--</a></li>-->
+<!--                  </ul>-->
+<!--                  <div class="title-footer">Liên kết</div>-->
+<!--                  <ul>-->
+<!--                    <li class="item-list-social"><i class="fa fa-facebook-square"></i> <a target="_blank" href="--><!--">Facebook</a></li>-->
+<!--                  </ul>-->
+<!--                  <span>-->
+<!--                      <div id="fb-root"></div>-->
+<!--                      <script>(function(d, s, id) {-->
+<!--                          var js, fjs = d.getElementsByTagName(s)[0];-->
+<!--                          if (d.getElementById(id)) return;-->
+<!--                          js = d.createElement(s); js.id = id;-->
+<!--                          js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6&appId=1772567082975774";-->
+<!--                          fjs.parentNode.insertBefore(js, fjs);-->
+<!--                        }(document, 'script', 'facebook-jssdk'));</script>-->
+<!--                      <div class="fb-like" data-href="https://shop.viettel.vn" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>-->
+<!--                  </span>-->
+<!--                </div>-->
+<!--              -->
+            </div>
+            <div class="clearfix"></div>
+
+        </div>
+		      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 text-center">
+              <h1 class="footer-heading">SHOP.VIETTEL.VN - WEBSITE MUA SẮM ONLINE CHÍNH THỨC CỦA VIETTEL</h1>
+              <div>© Viettel Telecom 2015. All rights reserved.</div>
+              <div>Cơ quan chủ quản: Tập đoàn Công nghiệp - Viễn thông Quân đội. Giấy phép số: 144/GP - BC do Bộ thông tin - Truyền thông cấp ngày 18/04/2007</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer><!-- end footer-->    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header popup_header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color:#ffffff">&times;</span>
+        </button>
+        <div class="fontclass_regular">Đăng nhập</div>
+      </div>
+      <div class="modal-body" style="padding-left:30px;padding-right:30px">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalRegisterUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header popup_header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color:#ffffff">&times;</span>
+        </button>
+        <div class="fontclass_regular">Đăng ký</div>
+      </div>
+      <div class="modal-body" style="padding-left:30px;padding-right:30px">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="modal fade" id="modalForgotPassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header popup_header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="color:#ffffff">&times;</span>
+          </button>
+          <div class="fontclass_regular">Quên mật khẩu</div>
+        </div>
+        <div class="modal-body" style="padding-left:30px;padding-right:30px">
+
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header popup_header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color:#ffffff">&times;</span>
+        </button>
+        <div class="fontclass_regular"></div>
+      </div>
+      <div class="modal-body" style="padding-left:30px;padding-right:30px">
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header popup_header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color:#ffffff">&times;</span>
+        </button>
+        <div class="fontclass_regular">Shop.viettel.vn - Thông báo</div>
+      </div>
+      <div style="padding-left:30px;padding-right:30px;text-align:center" class="modal-body">
+        <div style="height:20px"></div>
+        <div id="body-content"><i aria-hidden="true" class="fa fa-info-circle" style="color:#69BD45"></i> </div>
+        <div style="height:20px"></div>
+        <div style="text-align:center">
+          <button class="shopping_button" data-dismiss="modal">Đồng ý <i aria-hidden="true" class="fa fa-chevron-circle-right"></i></button>
+        </div>
+        <div style="height:20px"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalCheckOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header popup_header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color:#ffffff">&times;</span>
+        </button>
+        <div class="fontclass_regular">Shop.viettel.vn - Kiểm tra đơn hàng</div>
+      </div>
+      <div class="modal-body">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalPromotionCityFtth" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header popup_header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="color:#ffffff">&times;</span>
+        </button>
+        <div class="fontclass_regular">Danh sách các tỉnh khuyến mại cho gói cước</div>
+      </div>
+      <div class="modal-body">
+
+      </div>
+    </div>
+  </div>
+</div>
+    <img src="https://shop.viettel.vn/ga.php?tid=UA-37976464-8&amp;dr=-&amp;dp=%2Fthiet-bi&amp;dt=Thi%E1%BA%BFt+b%E1%BB%8B+%7C+Shop.viettel.vn" />
+    <script src="https://shop.viettel.vn/js/script.js"></script>
+    <script src="https://shop.viettel.vn/js/frontend/frontend.js?v=3"></script>
+    <script src="https://shop.viettel.vn/js/frontend/cookie.js"></script>
+    <script src="https://shop.viettel.vn/js/frontend/search.js"></script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script src="https://shop.viettel.vn/js/frontend/notify.js" ></script>
+
+    <script>
+      $(document).ready(function () {
+        $('body').append('<div id="toTop"><i class="fa fa-arrow-circle-up"></i></div>');
+        $(window).scroll(function () {
+          if ($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn();
+          } else {
+            $('#toTop').fadeOut();
+          }
+        });
+        $('#toTop').click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 600);
+          return false;
+        });
+      });
+    </script>
+
+
+          <div id="fb-root"></div>
+      <script>(function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10&appId=1365525213459999";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+      </body>
+</html>
 
