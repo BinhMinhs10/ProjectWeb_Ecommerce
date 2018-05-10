@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class clientHome extends CI_Controller {
+class clientProductDetail extends CI_Controller {
 
 	public function __construct()
 	{
@@ -18,11 +18,13 @@ class clientHome extends CI_Controller {
                 $this->load->model('productcategory_model');
                 $root_categories = $this->productcategory_model->getRootCategories();
                 $this->load->model('product_model');
-                $product_list = $this->product_model->getAllData();
-                $parameters = array("root_categories" => $root_categories, "product_list" => $product_list);
+                $id = $_GET['id'];
+                $product = $this->product_model->getDataById($id);
+                
+                $parameters = array("root_categories" => $root_categories, "product" => $product);
                 
                 
-		$this->load->view('shop/home', $parameters);
+		$this->load->view('shop/product_detail', $parameters);
 	}
 
 }

@@ -71,7 +71,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NX87J8C"
                       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
+    
         <?php require_once('Modules/header.php') ?>      
     
     <input type="hidden" name="_csrf_token" value="d7f15ff6d71e4e4077fb59f10d31e95e" id="csrf_token" />    
@@ -451,7 +451,8 @@
     });
   });
 </script>
-<?php require_once('Modules/product_list_content.php') ?>  
+
+<?php require_once('Modules/product_detail_content.php') ?>  
 
 <script>
   $( function() {

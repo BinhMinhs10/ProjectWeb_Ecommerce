@@ -1,8 +1,29 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+class clientProductList extends CI_Controller {
 
+	public function __construct()
+	{
+		parent::__construct();
+	}
+
+	public function index()
+	{
+//                $this->load->model('product_model');
+//                $productList = $this->product_model->getAllData();
+//                
+//                $productList = array("productList" => $productList);
+                
+                
+                $this->load->model('productcategory_model');
+                $root_categories = $this->productcategory_model->getRootCategories();
+                $parameters = array("root_categories" => $root_categories);
+                
+                
+		$this->load->view('shop/home', $parameters);
+	}
+
+}
+
+/* End of file Home.php */
+/* Location: ./application/controllers/Home.php */

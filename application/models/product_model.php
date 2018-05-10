@@ -9,7 +9,9 @@ class product_model extends CI_Model {
 		parent::__construct();
 		
 	}
-	public function getAllData(){
+        
+
+        public function getAllData(){
 		$this->db->select('*');
 		$this->db->order_by('product_id', 'desc');
 		$data = $this->db->get('product');
@@ -43,7 +45,7 @@ class product_model extends CI_Model {
 		$this->db->where('product_id', $key);
 		$data = $this->db->get('product');
 		$data = $data->result_array();
-		return $data;
+		return $data[0];
 	}
 
 	public function updateById($id,$product_name,$company,$category_id,$price,$discount,$image,$intro,$quantity){
