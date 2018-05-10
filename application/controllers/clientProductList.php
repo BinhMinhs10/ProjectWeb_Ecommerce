@@ -15,10 +15,10 @@ class clientProductList extends CI_Controller {
 //                $productList = array("productList" => $productList);
                 
                 
-                $this->load->model('productcategory_model');
-                $root_categories = $this->productcategory_model->getRootCategories();
-                $parameters = array("root_categories" => $root_categories);
-                
+        $this->load->model('productcategory_model');
+        $root_categories = $this->productcategory_model->getRootCategories();
+        $parameters = array("root_categories" => $root_categories);
+        
                 
 		$this->load->view('shop/home', $parameters);
 	}

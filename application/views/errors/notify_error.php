@@ -18,7 +18,7 @@
 		</h4>
 		<br>
 		<div class="row justify-content-center">
-			<a href="<?php echo base_url(); ?>/manager/home" class="btn btn-primary">Trở về</a></button>
+			<a href="<?php echo base_url(); ?>/shop/Shopping" class="btn btn-primary">Trở về</a></button>
 		</div>
 		
 	</div>

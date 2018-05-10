@@ -28,6 +28,7 @@
 							<a href="#" class="dropdown-item">Link 3</a>
 						</div>
 					</li>
+					<li class="nav-item"><a href="" class="nav-link text-white btn-outline-danger" >Log out</a></li>
 				</ul>
 			</div>
 			<form class="form-inline" action="#">

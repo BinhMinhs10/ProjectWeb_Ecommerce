@@ -11,7 +11,7 @@ class product_model extends CI_Model {
 	}
         
 
-        public function getAllData(){
+    public function getAllData(){
 		$this->db->select('*');
 		$this->db->order_by('product_id', 'desc');
 		$data = $this->db->get('product');
