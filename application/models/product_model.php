@@ -10,8 +10,19 @@ class product_model extends CI_Model {
 		
 	}
         
+        public function  getDataByCategory($category_id){
+            
+            $this->db->select('*');
+            $this->db->where('category_id', $category_id);
+            $this->db->order_by('product_id', 'desc');
+            $data = $this->db->get('product');
+            $data = $data->result_array();
 
-    public function getAllData(){
+            return $data;
+        }
+
+
+        public function getAllData(){
 		$this->db->select('*');
 		$this->db->order_by('product_id', 'desc');
 		$data = $this->db->get('product');
@@ -45,7 +56,7 @@ class product_model extends CI_Model {
 		$this->db->where('product_id', $key);
 		$data = $this->db->get('product');
 		$data = $data->result_array();
-		return $data[0];
+		return $data;
 	}
 
 	public function updateById($id,$product_name,$company,$category_id,$price,$discount,$image,$intro,$quantity){
@@ -63,7 +74,17 @@ class product_model extends CI_Model {
 
 		return $this->db->update('product', $data);
 	}
-
+        
+        public function minusQuantity($id, $num){
+            
+            $quantity = $this->getDataById($id)[0]['quantity'];
+            $quantity -= $num;
+            
+            $data = array('quantity' => $quantity);
+            $this->db->where('product_id', $id);
+            return $this->db->update('product', $data);
+        }
+        
 	public function getData($length,$start) {
 	    // $rowperpage length, $rowno start
 	    $this->db->select('*');
@@ -85,6 +106,15 @@ class product_model extends CI_Model {
 	 
 	    return $result[0]['allcount'];
 	}
+        
+        public function searchByName($name){
+            
+            $sql = "select * from product where LOWER(product_name) like LOWER('%$name%')";
+            $product = $this->db->query($sql);
+            $product = $product->result_array();
+            
+            return $product;
+        }
 }
 
 /* End of file product_model.php */

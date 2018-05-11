@@ -10,7 +10,7 @@ class productcategory extends CI_Controller {
 
 	public function index()
 	{
-		
+		session_start();
 		$ketqua = $this->productcategory_model->getAllData();
 		$ketqua = array('mangketqua' => $ketqua);
 

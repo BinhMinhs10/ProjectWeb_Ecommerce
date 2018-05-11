@@ -41,7 +41,6 @@ class user_model extends CI_Model {
 		return $data;
 	}
 
-
 	public function updateById($user_id,$username,$password,$email,$phone_number,$address){
 		$data = array(
 			'user_name' => $username,
@@ -60,7 +59,15 @@ class user_model extends CI_Model {
 		return $this->db->delete('user');
 
 	}
-
+        
+    public function checkUser($user_name, $password){
+        
+        $query = "select * from user where user_name like '$user_name' and password like '".md5($password)."'";
+        $user = $this->db->query($query);
+        $user = $user->result_array();
+        
+        return $user;
+    }
 
 }
 

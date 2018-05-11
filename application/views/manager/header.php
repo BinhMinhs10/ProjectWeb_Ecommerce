@@ -19,8 +19,8 @@
 				<ul class="navbar-nav">
 					<li class="nav-item"><a href="<?php echo base_url() ?>index.php/manager/home" class="nav-link text-white btn-outline-danger" >Trang chủ</a></li>
 					<li class="nav-item"><a href="#menu-toggle" class="nav-link text-white btn-outline-danger" id="menu-toggle">Menu</a></li>
-					<li class="nav-item"><a href="#" class="nav-link text-white btn-outline-danger" >Tin tức</a></li>
-					<li class="nav-item dropdown">
+					<li class="nav-item"><a href="#" class="nav-link text-white btn-outline-danger" >Thêm</a></li>
+					<!-- <li class="nav-item dropdown">
 						<a href="#" class="nav-link dropdown-toggle text-white btn-outline-danger" data-toggle="dropdown">Dropdown link</a>
 						<div class="dropdown-menu">
 							<a href="#" class="dropdown-item">Link 1</a>
@@ -28,7 +28,7 @@
 							<a href="#" class="dropdown-item">Link 3</a>
 						</div>
 					</li>
-					<li class="nav-item"><a href="" class="nav-link text-white btn-outline-danger" >Log out</a></li>
+					<li class="nav-item"><a href="" class="nav-link text-white btn-outline-danger" >Log out</a></li> -->
 				</ul>
 			</div>
 			<form class="form-inline" action="#">

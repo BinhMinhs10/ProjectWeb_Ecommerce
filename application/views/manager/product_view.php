@@ -1,3 +1,12 @@
+<?php
+    if(!isset($_SESSION["admin"])){
+
+        header("Location:".base_url()."index.php/manager/login");
+
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en"><head>
 	<title> Hiển thị danh sách các sản phẩm </title>

@@ -15,6 +15,7 @@ class product extends CI_Controller {
 
 	public function index()
 	{
+		session_start();
 		$this->load->model('productcategory_model');
 		$categories = $this->productcategory_model->getAllData();
 		$categories = array('categorys' => $categories);

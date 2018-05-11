@@ -18,6 +18,14 @@ class admin_model extends CI_Model {
 		$data = $data->result_array();
 		return $data;
 	}
+	public function checkAdmin($user_name, $password){
+        
+        $query = "select * from admin where user_name like '$user_name' and password like '".$password."'";
+        $user = $this->db->query($query);
+        $user = $user->result_array();
+        
+        return $user;
+    }
 
 }
 

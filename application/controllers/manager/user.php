@@ -1,5 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+
 class User extends CI_Controller {
 
 	public function __construct()
@@ -10,6 +11,7 @@ class User extends CI_Controller {
 
 	public function index()
 	{
+		session_start();
 		$result = $this->user_model->getAllData();
 		$data = array("mangketqua" => $result);
 		$this->load->view('manager/user_view', $data);
