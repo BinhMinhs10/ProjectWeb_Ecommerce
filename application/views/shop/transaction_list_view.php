@@ -453,53 +453,66 @@
 </script>
   
     <section class="section-27">
-
         <style>
-            #signin input[type=text], select, input[type=password] {
-            width: 40%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
+        #transation_list {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
         }
 
-        #signin input[type=submit] {
-            width: 10%;
+        #transation_list td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #transation_list tr:nth-child(even){background-color: #f2f2f2;}
+
+        #transation_list tr:hover {background-color: #ddd;}
+
+        #transation_list th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
             background-color: #4CAF50;
             color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
         }
-
-        #signin input[type=submit]:hover {
-            background-color: #45a049;
-        }
-        div#signin {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding-left : 30%;
-            padding-top : 5%;
-            padding-bottom : 5%;
-        }
+        </style>
         
-    </style>
-    <div id="signin">
-        <form method="post" action="" id="signin">
-            <label> User Name</label> <br>
-            <input name="user_name" type="text"><br>
-                    <label> Password</label> <br>
-            <input name="password" type="password"><br>
-            
-            <input type="submit" name="submit" value="Sign in">
-        </form>
-        <?php echo $error ?><br>
-            Chưa có tài khoản? <a href="<?php echo base_url() ?>index.php/signupController">Đăng ký</a>
-        </div>
+        <table id="transation_list">
+            <tr>
+                <th>Mã đơn hàng</th>
+                <th>Số tiền</th>
+                <th>Ngày tạo</th>
+                <th>Trạng thái</th>
+            </tr>
+            <?php foreach($transaction_list as $transaction):?>
+                
+            <tr>
+        <td><?php echo $transaction['transaction_id']?></td>
+                <td>
+                    <?php echo $transaction['money_amount'] ?>
+                </td>
+                <td>
+                    <?php echo $transaction['create_date'] ?>
+                </td>
+                <td>
+                    <?php
+                        if($transaction['status'] == 1){
+                            echo "Đã hoàn thành";
+                        }
+                        else{
+                            echo "Chưa hoàn thành";
+                        }
+                    ?>
+                </td>
+            </tr>
+                
+            <?php endforeach; ?>
+        </table>
+        
+        <?php
+        // put your code here
+        ?>
     </section>
 <script>
   $( function() {

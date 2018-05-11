@@ -455,17 +455,29 @@
     <section class="section-27">
 
         <style>
-            #signin input[type=text], select, input[type=password] {
-            width: 40%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
+        #cart {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
         }
 
-        #signin input[type=submit] {
+        #cart td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #cart tr:nth-child(even){background-color: #f2f2f2;}
+
+        #cart tr:hover {background-color: #ddd;}
+
+        #cart th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+        input[type=submit] {
             width: 10%;
             background-color: #4CAF50;
             color: white;
@@ -476,30 +488,49 @@
             cursor: pointer;
         }
 
-        #signin input[type=submit]:hover {
+        input[type=submit]:hover {
             background-color: #45a049;
         }
-        div#signin {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding-left : 30%;
-            padding-top : 5%;
-            padding-bottom : 5%;
-        }
-        
-    </style>
-    <div id="signin">
-        <form method="post" action="" id="signin">
-            <label> User Name</label> <br>
-            <input name="user_name" type="text"><br>
-                    <label> Password</label> <br>
-            <input name="password" type="password"><br>
-            
-            <input type="submit" name="submit" value="Sign in">
+
+</style>
+<form method="post" action="">
+        <table id="cart">
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Giá tiền</th>
+                <th>Chọn</th>
+            </tr>
+            <?php $i = 0; ?>
+            <?php foreach($orderList as $order): ?>
+                <tr>
+                    <td>
+                        <?php echo $order->getProduct()['product_name'] ?>
+                    </td>
+                    <td>
+                        <?php echo $order->getQuantity() ?>
+                    </td>
+                    <td>
+                        <?php echo ($order->getQuantity() * $order->getProduct()['price'] * (1 - $order->getProduct()['discount']/100)) ?> đồng
+                    </td>
+                    <td>
+                        <input type="checkbox" name="temp_orders[]" value="<?php echo $i ?>">
+                    </td>
+                </tr>
+                <?php $i++; ?>
+            <?php endforeach; ?>
+                <tr>
+                    <td colspan="4">
+                        Tổng tiền: <?php echo $total_money ?> đồng
+                    </td>
+                </tr>
+        </table>
+        <?php echo $note ?><br>
+    <input type="submit" name="delete" value="Xóa">
+</form>
+        <form method="post" action="<?php base_url() ?>addTransactionController">
+            <input type="submit" name="submit" value="Gửi đơn hàng">
         </form>
-        <?php echo $error ?><br>
-            Chưa có tài khoản? <a href="<?php echo base_url() ?>index.php/signupController">Đăng ký</a>
-        </div>
     </section>
 <script>
   $( function() {

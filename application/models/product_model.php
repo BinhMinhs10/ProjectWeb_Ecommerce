@@ -74,7 +74,17 @@ class product_model extends CI_Model {
 
 		return $this->db->update('product', $data);
 	}
-
+        
+        public function minusQuantity($id, $num){
+            
+            $quantity = $this->getDataById($id)[0]['quantity'];
+            $quantity -= $num;
+            
+            $data = array('quantity' => $quantity);
+            $this->db->where('product_id', $id);
+            return $this->db->update('product', $data);
+        }
+        
 	public function getData($length,$start) {
 	    // $rowperpage length, $rowno start
 	    $this->db->select('*');
@@ -96,6 +106,15 @@ class product_model extends CI_Model {
 	 
 	    return $result[0]['allcount'];
 	}
+        
+        public function searchByName($name){
+            
+            $sql = "select * from product where LOWER(product_name) like LOWER('%$name%')";
+            $product = $this->db->query($sql);
+            $product = $product->result_array();
+            
+            return $product;
+        }
 }
 
 /* End of file product_model.php */

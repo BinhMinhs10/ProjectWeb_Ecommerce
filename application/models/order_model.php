@@ -41,6 +41,19 @@ class order_model extends CI_Model {
 		$this->db->where('order_id', $id);
 		return $this->db->update('ordertable', $data);
 	}
+        
+        public function insertOrder($transaction_id, $product_id, $quantity){
+            
+            $data = array(
+			'transaction_id' => $transaction_id,
+			'product_id' => $product_id,
+			'quantity' => $quantity,
+			'status' => 0,
+		);
+            
+            $this->db->insert('ordertable', $data);
+            return $this->db->insert_id();
+        }
 
 }
 

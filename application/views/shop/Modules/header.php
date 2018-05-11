@@ -22,8 +22,8 @@
               <span class="des">Tìm kiếm</span></span></a>
 
           <div class="serch-destop input-group">
-            <form action="/tim-kiem" method="get">
-              <input name="kw" data-url="/ajax/goi-y-tim-kiem" id="input-search-index" type="text" class="form-control input-search-index"
+            <form action="<?php echo base_url() ?>index.php/searchController" method="get">
+              <input name="name" data-url="/ajax/goi-y-tim-kiem" id="input-search-index" type="text" class="form-control input-search-index"
                      aria-label="Text input with segmented button dropdown" placeholder="Tìm kiếm ">
 
               <div class="input-group-btn">
@@ -34,20 +34,18 @@
           </div>
         </div>
         <div class="item-shoping">
-          <a id="checkOrderTemp" href="javascript:void(0)" data-url="/ajax/check-order-temp">
+            <a href="<?php echo base_url() ?>index.php/orderListController">
+            <img class="svg img-mobile-menu" src="https://shop.viettel.vn/img/check-order.svg" alt="kiểm tra giỏ hàng"/>
+            <span class="des">Kiểm tra giỏ hàng</span>
+          </a>
+        </div>
+          <div class="item-shoping">
+            <a href="<?php echo base_url() ?>index.php/transactionListController">
             <img class="svg img-mobile-menu" src="https://shop.viettel.vn/img/check-order.svg" alt="kiểm tra đơn hàng"/>
-            <span class="des">Kiểm tra đơn hàng</span></a>
+            <span class="des">Kiểm tra đơn hàng</span>
+          </a>
         </div>
-        <div class="item-shoping">
-          <a href="/cua-hang">
-            <img class="svg img-mobile-menu" src="https://shop.viettel.vn/img/cua hang _ mobile.svg" alt="cửa hàng"/>
-            <span class="des">Cửa hàng</span></a>
-        </div>
-        <div class="item-shoping">
-          <a href="/yeu-thich">
-            <img class="svg img-mobile-menu" src="https://shop.viettel.vn/img/wish list _ mobile.svg" alt="yêu thích"/>
-            <span class="des">Yêu thích</span></a>
-        </div>
+        
 <!--        <div class="item-shoping">-->
 <!--          <a href="#"><img class="svg img-mobile-menu" src="img/gio hang _ mobile.svg" /> <span class="des">Giỏ hàng</span></a>-->
 <!--        </div>-->
@@ -70,7 +68,7 @@
                         <?php echo "Hello ".$_SESSION["user"]["user_name"] ?>
                     </div>
                     <div class="item-shoping border">
-                        <a href="<?php echo base_url() ?>index.php/signoutController"><span class="user">Đăng xuất</span>
+                        <a href="<?php echo base_url() ?>index.php/unsetSessionController"><span class="user">Đăng xuất</span>
                       </a>
                   </div>
                 <?php
@@ -111,8 +109,8 @@
     </div>
     <nav id="bs-navbar-mobi-search" class="collapse navbar-collapse">
       <div class="input-group">
-        <form action="/tim-kiem" method="get">
-          <input data-url="/ajax/goi-y-tim-kiem" id="input-search-index" type="text" name="kw" class="form-control input-search-index" aria-label="Text input with segmented button dropdown" placeholder="Tìm kiếm ">
+        <form action="<?php echo base_url() ?>index.php/searchController" method="get">
+          <input  id="input-search-index" type="text" name="name" class="form-control input-search-index" aria-label="Text input with segmented button dropdown" placeholder="Tìm kiếm ">
           <div class="input-group-btn">
             <button type="submit" class="btn btn-default button-search-index"><i class="fa fa-search"></i></button>
           </div>
@@ -277,7 +275,9 @@
 <!--  <a href="/" class="navbar-brand">
     <img class="logo" src="https://shop.viettel.vn/img/logo_viettel.png" alt="viettel"/>
       </a>-->
-
+<a href="<?php echo base_url() ?>index.php/clientHome" class="navbar-brand">
+    <img class="logo" src="https://cdn.dribbble.com/users/64815/screenshots/1518220/attachments/229248/shop_logo_big.png" alt="logo" style="width: 160px; height: 40px">
+      </a>
   <ul class="nav navbar-nav navbar-left">
     <!--Phần code đăng nhập ẩn đi-->
     <!--<li class="dropdown dropdown-mobile">

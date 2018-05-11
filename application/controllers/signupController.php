@@ -9,6 +9,8 @@ class signupController extends CI_Controller {
 
 	public function index()
 	{
+            $this->load->model('productcategory_model');
+            $root_categories = $this->productcategory_model->getRootCategories();
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
  // …          
                 session_start();
@@ -29,8 +31,8 @@ class signupController extends CI_Controller {
                 exit;
              }
              else{
-                 
-                 $this->load->view('shop/signup');
+                 $parameter = array("root_categories" =>$root_categories);
+                 $this->load->view('shop/signup', $parameter);
              }
                 
             

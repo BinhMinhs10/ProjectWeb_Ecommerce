@@ -10,7 +10,7 @@
 <meta name="description" content="Hướng dẫn cách đăng ký 3G, chọn sim số đẹp, mua điện thoại chính hãng, lắp đặt internet truyền hình Viettel. Các chương trình khuyến mại lớn của Viettel." />
 <meta name="keywords" content="viettel shop, shop online viettel, 3G viettel, đăng ký 3g viettel, dk 3g viettel, sim so dep viettel, so dep nam sinh, mua dien thoai chinh hang, smartphone chính hãng, lắp đặt internet, truyền hình, sim số đẹp, sim viettel, sim phong thuy, sim gia re" />
 <meta name="robots" content="index, follow" />
-    <title>Thiết bị | Shop.viettel.vn</title>
+    <title>Ecommerce</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
           <meta property="og:url" content="https://shop.viettel.vn" />

@@ -10,6 +10,7 @@ class order extends CI_Controller {
 
 	public function index()
 	{
+		session_start();
 		$result = $this->order_model->getAllData();
 		$data = array("mangketqua" => $result);
 		$this->load->view('manager/order_view', $data);

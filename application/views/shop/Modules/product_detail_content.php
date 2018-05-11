@@ -16,7 +16,7 @@
 
       <div class="col-xs-12 col-md-6 produce-des-detail">
 <!--        <div class="text1">Giới thiệu</div>-->
-        <div class="share-link">
+        <div class="share-link" style="display: none;">
 
           <div class="share1">
             <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.d383dc1d510865aceaa5e552afcf5663.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=https%3A%2F%2Fshop.viettel.vn%2Fchi-tiet-thiet-bi%2Fsamsung-galaxy-j2-pro-khuyen-mai-hoa-mang-tra-sau&amp;size=m&amp;text=Samsung%20Galaxy%20J2%20Pro%20(KM%20H%C3%B2a%20M%E1%BA%A1ng%20Tr%E1%BA%A3%20Sau)%20%7C%20Shop.viettel.vn&amp;time=1525918766341&amp;type=share&amp;url=https%3A%2F%2Fshop.viettel.vn%2Fchi-tiet-thiet-bi%2Fsamsung-galaxy-j2-pro-khuyen-mai-hoa-mang-tra-sau" style="position: static; visibility: visible; width: 60px; height: 20px;"></iframe>
@@ -54,7 +54,17 @@
 
         <div class="text2">
             <p>
-              <?php echo $product['intro'] ?>
+              <?php echo $product['intro'] ?><br>
+              Trạng thái:
+              <?php
+                if($product['quantity'] > 0){
+                    
+                    echo 'Còn hàng';
+                }
+                else{
+                    echo 'Hết hàng';
+                }
+              ?>
             </p>
         </div>
         
@@ -66,44 +76,19 @@
                           <span class="show-price" data-index="5932">
               <?php echo ($product['price'] * (1 - $product['discount']/100))?> đồng
                                   <br>
-                                  <span class="text-old-price"><strike>Giá
-                        cũ <?php echo $product['price']?>                        đồng</strike> -<?php echo $product['discount'] ?>                      %</span>
+                                  <span class="text-old-price">
+                                      <strike>Giá cũ <?php echo $product['price']?> đồng</strike> -<?php echo $product['discount'] ?> %</span>
                                               </span>
                       </div>
           <!--        <a class="col-xs-6 col-md-5 btn-buy action-buy" data-device-id="-->
           <!--" data-url="-->
           <!--" href="javascript:void(0)">Mua ngay <i class="fa fa-chevron-circle-right"></i></a>-->
-          <a class="col-xs-6 col-md-5 btn-buy" href="/thanh-toan-thiet-bi/chon-hinh-thuc/samsung-galaxy-j2-pro-khuyen-mai-hoa-mang-tra-sau">Mua ngay <i class="fa fa-chevron-circle-right"></i></a>
+          <a class="col-xs-6 col-md-5 btn-buy" href="<?php echo base_url() ?>index.php/temporaryOrderController?product_id=<?php echo $product['product_id']?>">Thêm vào giỏ hàng</a>
 
           <div class="clearfix"></div>
         </div>
 
-        <div class="list-bottom">
-          <div class="vitri" style="width: 215px; height: 20px;">
-            <!--          Vị trí của bạn: quận Cầu Giấy<br />-->
-            <!--          <a href="#">Cửa hàng gần nhất <i class="fa fa-chevron-circle-right"></i></a>-->
-          </div>
-          <a class="btn1" href="javascript:openChatBoxIPCC();">
-            <i class="fa fa-comments"></i>
-            Chat với tư vấn
-          </a>
-
-          <a class="btn1 addWishList " title="Yêu thích" href="javascript:void(0)" data-value="2995" data-url="/ajax/yeu-thich" data-type="1" data-token="d8276e459168756cd254ebc73f5d02d1" data-wishclass="ic-device-liked">
-  <i class="fa fa-heart"></i>
-  Yêu thích
-</a>
-
-<!--          --><!--          --><!--          <a class="btn1 addWishList --><!--" title="--><!--" href="javascript:void(0)"-->
-<!--             data-value="--><!--"-->
-<!--             data-url="--><!--"-->
-<!--             data-type="--><!--"-->
-<!--             data-token="--><!--"-->
-<!--             data-wishclass="ic-device-liked">-->
-<!--            <i class="fa fa-heart"></i>-->
-<!--            Yêu thích-->
-<!--          </a>-->
-
-        </div>
+       
 
       </div>
 
