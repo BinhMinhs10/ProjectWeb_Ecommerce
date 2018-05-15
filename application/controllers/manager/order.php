@@ -1,4 +1,9 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php 
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class order extends CI_Controller {
 
@@ -10,7 +15,6 @@ class order extends CI_Controller {
 
 	public function index()
 	{
-		session_start();
 		$result = $this->order_model->getAllData();
 		$data = array("mangketqua" => $result);
 		$this->load->view('manager/order_view', $data);

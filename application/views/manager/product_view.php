@@ -17,7 +17,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	<style type="text/css">
-	    a {
+	    #pagination a{
 	      padding-left: 15px;
 	      padding-right: 15px;
 	      margin-left: 15px;
@@ -104,7 +104,7 @@
 	 				
 	 			</div>	
 	 			<center>
-	 				<div style='margin-top: 10px;' id='pagination'></div>
+	 				<div class="page-link" style='margin-top: 10px;' id='pagination'></div>
 	 			</center>
 				
 	 		</div><!-- end full container-->
@@ -156,9 +156,9 @@
 		          	// content = content.substr(0, 60) + " ...";
 		          	sno+=1;
 
-		          	var tr = '<div class="col-sm-4">';
+		          	var tr = '<div class="col-sm-3">';
 		          	tr += '<div class="card card-block">';
-		          	tr += '<img  style="height: 350px" class="card-img-top img-fluid img-thumbnail" src="<?php echo base_url(); ?>'+image+'" alt="Card images" >';
+		          	tr += '<img  style="height: 200px" class="card-img-top img-fluid img-thumbnail" src="<?php echo base_url(); ?>'+image+'" alt="Card images" >';
 		          	tr += '<h4 class="card-title"><b>'+product_name+'</b></h4>';
 		          	tr += '<p class="card-text category_id">Id category: <b>'+category_id+'</b></p>';
 		          	tr += '<p class="card-text company">Hãng sản xuất: <b>'+company+'</b></p>';
