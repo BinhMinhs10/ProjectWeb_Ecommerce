@@ -53,4 +53,10 @@ class transaction_model extends CI_Model {
 
         return $data;
     }
+    public function getDataById($id){
+        $this->db->select('*');
+        $this->db->where('transaction_id', $id);
+        $data = $this->db->get('transaction');
+        return $data->result_array();
+    }
 }

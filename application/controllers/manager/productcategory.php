@@ -1,4 +1,9 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class productcategory extends CI_Controller {
 
@@ -10,7 +15,7 @@ class productcategory extends CI_Controller {
 
 	public function index()
 	{
-		session_start();
+		
 		$ketqua = $this->productcategory_model->getAllData();
 		$ketqua = array('mangketqua' => $ketqua);
 

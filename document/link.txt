@@ -1,0 +1,9 @@
+http://localhost:8080/Project_webpage//index.php/manager/login
+
+http://localhost:8080/Project_webpage//index.php/manager/home
+
+------------------------------------------------------------
+http://localhost:8080/Project_webpage/index.php/clientHome
+
+
+

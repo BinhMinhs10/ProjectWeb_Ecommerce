@@ -1,4 +1,9 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php 
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class product extends CI_Controller {
 
@@ -15,7 +20,6 @@ class product extends CI_Controller {
 
 	public function index()
 	{
-		session_start();
 		$this->load->model('productcategory_model');
 		$categories = $this->productcategory_model->getAllData();
 		$categories = array('categorys' => $categories);
@@ -26,7 +30,7 @@ class product extends CI_Controller {
 	public function loadRecord($rowno=0){
 
 	    // Row per page
-	    $rowperpage = 6;
+	    $rowperpage = 8;
 
 	    // Row position
 	    if($rowno != 0){

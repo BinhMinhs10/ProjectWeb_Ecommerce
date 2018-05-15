@@ -1,4 +1,9 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php 
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Home extends CI_Controller {
 
@@ -9,9 +14,12 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		session_start();
 		$this->load->view('manager/home_view');
 
+	}
+	public function contact()
+	{
+		$this->load->view('manager/contact_view');
 	}
 
 }

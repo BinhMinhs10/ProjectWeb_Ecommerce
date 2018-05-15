@@ -1,4 +1,11 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php 
+
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+}   
+
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class login extends CI_Controller {
 
@@ -16,21 +23,21 @@ class login extends CI_Controller {
 		$password = $this->input->post('password');
 
 		$this->load->model('admin_model');
-		session_start();
 
 		$user = $this->admin_model->checkAdmin($username, $password);
 
 		if(count($user) == 0){
-
 			$this->load->view('errors/notify_error');
 		}
 		else{
 			$_SESSION["admin"] = $user[0];
 			$this->load->view('manager/home_view');
 		}
+	}
 
-		
-		
+	public function logout(){
+		session_unset();
+		$this->load->view('manager/Form_login');
 	}
 
 }

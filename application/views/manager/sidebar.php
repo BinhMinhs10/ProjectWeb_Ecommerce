@@ -17,7 +17,8 @@
                 </a>
             </li>
             <li>
-                <a href="">Quản lý Admin</a>
+                <div class="tach">+++++++++++++++++++</div>
+                
             </li>
             <li>
                 <a href="<?php echo base_url(); ?>index.php/manager/productcategory">Quản lý danh mục SP</a>
@@ -31,9 +32,11 @@
             <li>
                 <a href="<?php echo base_url(); ?>index.php/manager/order">Quản lý đơn hàng</a>
             </li>
-            
             <li>
-                <a href="#">Contact</a>
+                <a href="<?php echo base_url(); ?>index.php/manager/DetailOrder">Xử lý đơn hàng</a>
+            </li>
+            <li>
+                <a href="<?php echo base_url(); ?>index.php/manager/home/contact">Contact</a>
             </li>
         </ul>
     </div>
